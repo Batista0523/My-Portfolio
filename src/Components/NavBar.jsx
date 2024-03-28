@@ -18,13 +18,13 @@ function NavBar() {
         </HashLink>
         <div className="nav-links" style={{ display: showLinks ? "flex" : "none" }}>
           <HashLink smooth to="/#about-section" className="nav-link">
-            <h2>About Us</h2>
+            <h2>About Me</h2>
           </HashLink>
           <HashLink smooth to="/#contact-section" className="nav-link">
-            <h2>Contact</h2>
+            <h2>Contact Me</h2>
           </HashLink>
           <HashLink smooth to="/#projects-section" className="nav-link">
-            <h2>Projects</h2>
+            <h2>My Works</h2>
           </HashLink>
         </div>
         <div className="toggle-button" onClick={toggleLinks}>

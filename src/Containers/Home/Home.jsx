@@ -1,25 +1,34 @@
 import React from "react";
 import "./Home.css";
+import About from "../About/About";
+import Contact from "../Contacts/Contact";
+import Projects from "../Projects/Projects";
+import { images } from "../../constants";
 
 function Home() {
   return (
     <div>
       <div className="home-container">
         <div className="content">
-          <header>
-            <h1>Software developer</h1>
-            <p>I am a Web Developer Ready to make your dream come true</p>
+          <header className="infoMe">
+            <p className="p-description">
+              I am a dedicated <strong> Web Developer </strong> committed to
+              turning your vision into reality.
+            </p>
+            <h1 className="infoMeTitle">Software Engineer</h1>
+            <h1 className="infoMeName">Elisaul Batista</h1>
+            <img className="profilePic" src={images.profilePic} alt="" />
           </header>
         </div>
       </div>
       <div id="about-section">
-        <h1>About Us Section</h1>
+        <About />
       </div>
       <div id="contact-section">
-        <h1>Contact Section</h1>
+        <Contact />
       </div>
       <div id="projects-section">
-        <h1>Projects Section</h1>
+        <Projects />
       </div>
     </div>
   );
