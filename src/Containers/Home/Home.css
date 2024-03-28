@@ -1,0 +1,26 @@
+.home-container{
+    background-image: url('/src/assets/image\ for\ home.jpeg');
+    background-attachment: fixed;
+    background-color: #272833;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+    z-index: 21;
+    
+}
+
+.content{
+    display: inline-block;
+    margin-right: 1%;
+    max-width: 95%;
+    padding: 6em;
+    position: relative;
+    text-align: right;
+    vertical-align: middle;
+    z-index: 1;
+    color: white;
+    margin: 23rem;
+}
