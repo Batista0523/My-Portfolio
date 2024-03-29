@@ -12,8 +12,7 @@ function NavBar() {
   return (
     <div className="app_nav">
       <div className="nav-container">
-        <HashLink smooth to='/' className="nav-link">
-
+        <HashLink smooth to='/#' className="nav-link">
         <h1 className="nav-logo">Elisaul Batista</h1>
         </HashLink>
         <div className="nav-links" style={{ display: showLinks ? "flex" : "none" }}>

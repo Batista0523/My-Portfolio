@@ -9,7 +9,7 @@ function Home() {
   return (
     <div>
       <div className="home-container">
-        <div className="content">
+        <div className="homeContent">
           <header className="infoMe">
             <p className="p-description">
               I am a dedicated <strong> Web Developer </strong> committed to
@@ -24,11 +24,11 @@ function Home() {
       <div id="about-section">
         <About />
       </div>
-      <div id="contact-section">
-        <Contact />
-      </div>
       <div id="projects-section">
         <Projects />
+      </div>
+      <div id="contact-section">
+        <Contact />
       </div>
     </div>
   );

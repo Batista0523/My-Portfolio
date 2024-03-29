@@ -17,7 +17,7 @@
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
-    opacity: 0.7;
+    opacity: 0.9;
 }
 
 .overlay {
@@ -30,7 +30,7 @@
    margin: 5px;
    
 }
-.content {
+.homeContent {
     display: inline-block;
     margin-right: 1%;
     max-width: 95%;

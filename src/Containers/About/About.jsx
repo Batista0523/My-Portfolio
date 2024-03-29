@@ -3,9 +3,9 @@ import "./About.css";
 
 function About() {
   return (
-    <div>
+    <div className="about">
       <div className="about-container">
-        <div className="content">
+        <div className="aboutContent">
         <h1>about me</h1>
         </div>
       </div>
