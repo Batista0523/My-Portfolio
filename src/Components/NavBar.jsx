@@ -19,11 +19,11 @@ function NavBar() {
           <HashLink smooth to="/#about-section" className="nav-link">
             <h2>About Me</h2>
           </HashLink>
-          <HashLink smooth to="/#contact-section" className="nav-link">
-            <h2>Contact Me</h2>
-          </HashLink>
           <HashLink smooth to="/#projects-section" className="nav-link">
             <h2>My Works</h2>
+          </HashLink>
+          <HashLink smooth to="/#contact-section" className="nav-link">
+            <h2>Contact Me</h2>
           </HashLink>
         </div>
         <div className="toggle-button" onClick={toggleLinks}>

@@ -1,4 +1,3 @@
-
 .home-container {
     position: relative;
     min-height: 100vh;
@@ -26,129 +25,119 @@
     background-color: rgba(0, 0, 0, 0.5);
     box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
 }
-.infoMeName{
-   margin: 5px;
-   
-}
+
+
 .homeContent {
     display: inline-block;
-    margin-right: 1%;
     max-width: 95%;
     padding: 6em;
     position: relative;
-    text-align: right;
+    text-align: center; 
     vertical-align: middle;
     z-index: 1;
     color: white;
-    margin: 23rem;
+    margin: 0 auto; 
+    margin-top: 30rem;
+    margin-right: 1rem;
 }
-
-.profilePic {
-    width: 250px;
-    border-radius: 415px;
-    margin-right: 25rem;
-  
-}
-
-/* .infoMeTitle {
-   
-} */
-
 .infoMe {
     display: flex;
-    flex-direction: column-reverse;
-    margin-left: 95rem;
+    flex-direction: row; 
+    align-items: center; 
+    justify-content: center;
     background-color: rgba(0, 0, 0, 0.325);
     border: none;
     border-radius: 45px;
-    padding: 15px;
-    
+    padding: 1.5rem;
+    font-family: cursive;
+    margin: 2rem auto; 
+    max-width: 800px;
+}
+
+.profilePic {
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem; 
+}
+.infoMeName,
+.infoMeTitle,
+.resumeDownload {
+    flex: 1;
+    margin: 0.8rem;
+    padding: 12px;
+    color: rgb(249, 245, 245);
+    font-size: 1.5rem;
+    background-color: rgba(45, 40, 40, 0.451);
+    border-radius: 25px;
+    text-align: center;
+    font-family: cursive;
+}
+
+.resumeDownload {
+    cursor: pointer;
 }
 
 .p-description {
-    font-size: 30px;
+    font-size: 1.5rem;
     color: white;
     padding: 5px;
     margin: 5px;
-   
+   font-family: 'Times New Roman', Times, serif;
 }
 
-@media screen and (max-width: 1600px) {
-    .content {
-        padding: 6em;
-        margin: 20rem;
-    }
-
-    .profilePic {
-        width: 200px;
-        margin-right: 20rem;
-    }
-
-    .infoMe {
-        margin-left: 20rem;
-    }
-
-    .p-description {
-        font-size: 25px;
-    }
-}
 
 @media screen and (max-width: 1200px) {
-    .content {
+    .homeContent {
         padding: 4em;
-        margin: 15rem;
-    }
-
-    .profilePic {
-        width: 150px;
-        margin-right: 15rem;
-    }
-
-    .infoMe {
-        margin-left: 15rem;
-    }
-
-    .p-description {
-        font-size: 20px;
     }
 }
 
 @media screen and (max-width: 992px) {
-    .content {
+    .homeContent {
         padding: 3em;
-        margin: 10rem;
-    }
-
-    .profilePic {
-        width: 100px;
-        margin-right: 10rem;
-    }
-
-    .infoMe {
-        margin-left: 10rem;
-    }
-
-    .p-description {
-        font-size: 18px;
     }
 }
 
 @media screen and (max-width: 768px) {
-    .content {
+    .homeContent {
         padding: 2em;
-        margin: 5rem;
-    }
-
-    .profilePic {
-        width: 80px;
-        margin-right: 5rem;
     }
 
     .infoMe {
-        margin-left: 5rem;
+        margin: 1rem auto;
+    }
+
+    .profilePic {
+        width: 150px;
+    }
+
+    .infoMeName,
+    .infoMeTitle,
+    .resumeDownload {
+        font-size: 1.2rem;
     }
 
     .p-description {
-        font-size: 16px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .homeContent {
+        padding: 1em;
+    }
+
+    .profilePic {
+        width: 100px;
+    }
+
+    .infoMeName,
+    .infoMeTitle,
+    .resumeDownload {
+        font-size: 1rem;
+    }
+
+    .p-description {
+        font-size: 0.8rem;
     }
 }
