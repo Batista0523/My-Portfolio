@@ -1,84 +1,95 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Sacramento&family=Tangerine:wght@400;700&display=swap');
 .app_nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 6rem;
+    height: 6rem; 
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: #3d3939;
-    color: white;
-  }
-  .nav-logo{
-    font-family: cursive;
-    font-weight: 400;
-    font-style: normal;
- 
-  }
-  .nav-container {
+    color: rgb(0, 0, 0);
+    background-color: rgb(203, 203, 191);
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    opacity: 0.9;
+
+}
+
+.nav-logo {
+    font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.nav-container {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .nav-link {
+}
+
+.nav-link {
     text-decoration: none;
-    font-size: 1rem;
+   font-size: 20px;
     padding: 0.4rem;
     color: inherit;
-  }
-  
-  .nav-links {
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.nav-link:hover {
+    color: rgb(255, 255, 255);
+}
+
+.nav-links {
     display: flex;
     align-items: center;
-  }
-  
-  .nav-links>* {
+}
+
+.nav-links>* {
     margin-left: 20px;
-  }
-  
-  .left-section {
+}
+
+.left-section {
     display: flex;
     align-items: center;
-  }
-  
-  .right-section {
+}
+
+.right-section {
     display: flex;
     align-items: center;
-  }
-  
-.toggle-button{
+}
+
+.toggle-button {
     cursor: pointer;
 }
-  @media screen and (max-width: 768px) {
+
+@media screen and (max-width: 768px) {
     .nav-links>* {
-      margin-left: 10px;
+        margin-left: 10px;
     }
-  
+
     .nav-link {
-      font-size: 0.9rem;
+        font-size: 0.9rem;
     }
-  }
-  
-  @media screen and (max-width: 576px) {
+}
+
+@media screen and (max-width: 576px) {
     .nav-links {
-      display: none;
+        display: none;
     }
-  
+
     .left-section,
     .right-section {
-      display: none;
+        display: none;
     }
-  
-    .nav-link {
-      font-size: 0.8rem;
-      padding: 0.2rem;
-    }
-  }
-  
 
-  
+    .nav-link {
+        font-size: 0.8rem;
+        padding: 0.2rem;
+    }
+}
