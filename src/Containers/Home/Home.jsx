@@ -4,8 +4,11 @@ import About from "../About/About";
 import Contact from "../Contacts/Contact";
 import Projects from "../Projects/Projects";
 import { images } from "../../constants";
-import { Document, Page } from "react-pdf";
-import resumePdf from "../../Resume/Elisaul_Batista_Resume_8_ID3_02292024.pdf";
+import "animate.css";
+
+
+
+
 function Home() {
   const [showResume, setShowResume] = useState(false);
   const resumeUrl = "/src/Resume/Elisaul_Batista_Resume_8_ID3_02292024.pdf";
@@ -16,7 +19,7 @@ function Home() {
   return (
     <div>
       <div className="home-container">
-        <div className="homeContent">
+        <div className="homeContent animate__animated animate__rotateInDownLeft">
           <header className="infoMe">
             <img className="profilePic" src={images.profilePic} alt="" />
             <h1 className="infoMeName">Elisaul Batista</h1>
