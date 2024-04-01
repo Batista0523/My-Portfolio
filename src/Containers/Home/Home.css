@@ -108,7 +108,7 @@
     .home-container::before{
         background-image: url('/src/assets/back1.png');
         background-attachment: fixed;
-        background-position: center; /* Center the background image horizontally */
+        background-position: center; 
         background-size: cover;
     }
     .infoMe {
@@ -152,5 +152,33 @@
 
     .p-description {
         font-size: 0.8rem;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 834px) {
+    .homeContent {
+        padding: 2rem;
+    }
+    .home-container::before{
+        background-image: url('/src/assets/back1.png');
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+    .infoMe {
+        margin: 1rem auto;
+        max-width: 500px; 
+    }
+
+    .profilePic {
+        width: 150px;
+    }
+
+    .infoMeName,
+    .infoMeTitle,
+    .resumeDownload,
+    .p-description {
+        font-size: 1.2rem;
+        margin: 0;
+        width: auto;
     }
 }
