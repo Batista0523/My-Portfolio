@@ -15,11 +15,11 @@ function takeEffect (aboutRef1,aboutRef2 )  {
             const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
             
             if (rect1.top <= viewHeight && rect1.bottom >= 0) {
-              about1.classList.add("animate__animated", "animate__bounceInLeft");
+              about1.classList.add("animate__animated", "animate__fadeInLeft");
             }
             
             if (rect2.top <= viewHeight && rect2.bottom >= 0) {
-              about2.classList.add("animate__animated", "animate__bounceInRight");
+              about2.classList.add("animate__animated", "animate__fadeInRight");
             }
           }
         };
