@@ -161,7 +161,7 @@
     .home-container::before{
         background-image: url('/src/assets/back1.png');
         background-attachment: fixed;
-        background-position: center;
+        background-position: center center;
         background-size: cover;
     }
     .infoMe {
