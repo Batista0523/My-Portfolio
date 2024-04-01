@@ -72,7 +72,13 @@
    padding-top: 7rem;
    
   }
- 
+  .about-container::before{
+
+    background-image: url('/src/assets/aboutback.png');
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+  }
   
 }
 
