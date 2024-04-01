@@ -5,20 +5,20 @@
     z-index: 21;
 }
 
-.project-container::before {
+ .project-container::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 90%;
     background-image: url('/src/assets/projectBack.png');
     background-attachment: fixed;
-    background-position: center center;
+    background-position: center right; 
     background-size: cover;
-    opacity: 0.9;
-}
-
+    opacity: 1;
+  } 
+  
 .overlay {
     position: relative;
     z-index: 1;

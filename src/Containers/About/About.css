@@ -1,4 +1,6 @@
-
+.about-body{
+    height: fit-content;
+}
   .about-container {
     display: flex;
     justify-content: center;
@@ -19,7 +21,7 @@
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
-    opacity: 0.9;
+    opacity:1;
   }
   
   .aboutContent {
@@ -35,6 +37,7 @@
     color: white;
     margin-right: 5rem;
     background-color: black;
+    margin-top: 15rem;
   }
   
   .aboutContent2 {
@@ -50,5 +53,6 @@
     color: white;
     margin-left: 5rem;
     background-color: black;
+    margin-top: 15rem;
   }
   

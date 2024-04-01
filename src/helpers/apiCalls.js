@@ -1,5 +1,5 @@
 import axios from "axios";
-const URL = import.meta.env.VITE_API;// ahy que agregar el env
+// const URL = import.meta.env.VITE_API;
 
 const handleResponse = (response) => {
   const { success, data } = response.data;

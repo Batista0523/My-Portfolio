@@ -40,3 +40,10 @@
 .read-the-docs {
   color: #888;
 } */
+.app-main {
+  background-image: url("../src/assets/main-back.png");
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+}

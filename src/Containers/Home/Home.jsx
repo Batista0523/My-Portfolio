@@ -19,7 +19,7 @@ function Home() {
   return (
     <div>
       <div className="home-container">
-        <div className="homeContent animate__animated animate__rotateInDownLeft">
+        <div className="homeContent animate__animated animate__zoomIn animate__slower">
           <header className="infoMe">
             <img className="profilePic" src={images.profilePic} alt="" />
             <h1 className="infoMeName">Elisaul Batista</h1>
