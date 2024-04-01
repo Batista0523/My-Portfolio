@@ -1,58 +1,86 @@
-.about-body{
-    height: fit-content;
+.about-body {
+  height: fit-content;
 }
-  .about-container {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    min-height: 100vh;
-    text-align: center;
-    z-index: 21;
-  }
-  
-  .about-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('/src/assets/aboutback.png');
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-    opacity:1;
-  }
-  
-  .aboutContent {
-    display: inline-block;
-    height: fit-content;
-    margin-right: 1%;
-    width: fit-content;
-    padding: 3em;
-    position: relative;
-    text-align: center;
-    margin: 10px;
-    border-radius: 15px;
-    color: white;
-    margin-right: 5rem;
-    background-color: black;
-    margin-top: 15rem;
-  }
-  
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  min-height: 100vh;
+  text-align: center;
+  z-index: 21;
+}
+
+.about-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/src/assets/aboutback.png');
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  opacity: 1;
+}
+
+.aboutContent,
+.aboutContent2 {
+  display: inline-block;
+  width: 90%; 
+  padding: 3em;
+  position: relative;
+  text-align: center;
+  margin: 10px auto; 
+  border-radius: 15px;
+  color: white;
+  background-color: black;
+  height: fit-content;
+  margin-left: 5rem;
+  margin-top: 15rem;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+  .aboutContent,
   .aboutContent2 {
-    display: inline-block;
-    margin-right: 1%;
-    width: fit-content;
-    height: fit-content;
-    padding: 3em;
-    position: relative;
-    text-align: center;
-    margin: 10px;
-    border-radius: 15px;
-    color: white;
-    margin-left: 5rem;
-    background-color: black;
-    margin-top: 15rem;
+      width: 80%;
+      margin: 3rem;
+      margin-top: 20rem;
+      
   }
+}
+
+@media screen and (max-width: 992px) {
+  .aboutContent,
+  .aboutContent2 {
+      width: 70%;
+      margin: 3rem
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutContent,
+  .aboutContent2 {
+    width: auto;
+    margin: 2rem;
+    padding: 20px;
+    display: inline-block;
+    height: fit-content;
+    position: relative;
+   padding-top: 7rem;
+   
+  }
+
   
+}
+
+@media screen and (max-width: 576px) {
+  .aboutContent,
+  .aboutContent2 {
+      width: 90%; 
+      margin-top: 8rem; 
+  }
+} 

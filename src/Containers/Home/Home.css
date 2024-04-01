@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap');
 
-
 .home-container {
     position: relative;
     min-height: 100vh;
@@ -32,17 +31,16 @@
 .homeContent {
     display: inline-block;
     max-width: 95%;
-    padding: 6em;
+    padding: 60px; 
     position: relative;
-    text-align: center; 
+    text-align: center;
     vertical-align: middle;
     z-index: 1;
     color: white;
-    margin: 0 auto; 
-    margin-top: 10rem;
-    margin-right: 1rem;
+    margin: 10px auto;
+    
+    margin-top: 15rem;
 }
-
 .infoMe {
     display: flex;
     flex-direction: row; 
@@ -55,9 +53,6 @@
     margin: 2rem auto; 
     max-width: 800px;
     font-family: "Cormorant", serif;
-   
-   
-   
 }
 
 .profilePic {
@@ -66,16 +61,14 @@
     margin-bottom: 1rem; 
 }
 
-
-
 .infoMeName,
 .infoMeTitle,
 .resumeDownload {
     flex: 1;
-    margin: 0.8rem;
+    margin: 10px;
     padding: 12px;
     color: rgb(249, 245, 245);
-    font-size: 1.5rem;
+    font-size: 28px; 
     background-color: rgba(45, 40, 40, 0.451);
     border-radius: 25px;
     text-align: center;
@@ -87,10 +80,10 @@
 }
 
 .p-description {
-    font-size: 1.5rem;
+    font-size: 24px; 
     color: white;
     padding: 5px;
-    margin: 5px;  
+    margin: 5px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -103,15 +96,22 @@
     .homeContent {
         padding: 3em;
     }
+
+    .infoMe {
+        margin: 1rem auto;
+        max-width: 600px;
+    }
 }
+
 
 @media screen and (max-width: 768px) {
     .homeContent {
-        padding: 2em;
+        padding: 2rem;
     }
 
     .infoMe {
         margin: 1rem auto;
+        max-width: 500px;
     }
 
     .profilePic {
@@ -122,12 +122,17 @@
     .infoMeTitle,
     .resumeDownload {
         font-size: 1.2rem;
+        margin: 0;
+        width: auto;
     }
 
     .p-description {
-        font-size: 1rem;
+        font-size: 1.2rem;
+        margin: 0;
+        width: auto;
     }
 }
+
 
 @media screen and (max-width: 576px) {
     .homeContent {
