@@ -10,6 +10,7 @@
   text-align: center;
   z-index: 21;
 }
+
 .about-container::before {
   content: "";
   position: absolute;
@@ -39,7 +40,6 @@
   margin-left: 5rem;
   margin-top: 15rem;
 }
-
 
 
 @media screen and (max-width: 1200px) {
@@ -72,6 +72,8 @@
    padding-top: 7rem;
    
   }
+  
+
   .about-container::before{
 
     background-image: url('/src/assets/aboutback.png');

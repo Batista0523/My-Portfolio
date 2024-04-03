@@ -11,7 +11,7 @@ import "animate.css";
 
 function Home() {
   const [showResume, setShowResume] = useState(false);
-  const resumeUrl = "/src/Resume/Elisaul_Batista_Resume_8_ID3_02292024.pdf";
+  const resumeUrl = "/porfolio-front-end/public/Resume/Elisaul_Batista_Resume_8_ID3_02292024.pdf";
   const handleShowResume = () => {
     setShowResume(true);
   };

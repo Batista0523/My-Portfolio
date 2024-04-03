@@ -105,6 +105,7 @@
     .homeContent {
         padding: 2rem;
     }
+    
     .home-container::before{
         background-image: url('/src/assets/back1.png');
         background-attachment: fixed;
@@ -161,7 +162,7 @@
     .home-container::before{
         background-image: url('/src/assets/back1.png');
         background-attachment: fixed;
-        background-position: center center;
+        background-position: center;
         background-size: cover;
     }
     .infoMe {
