@@ -41,30 +41,50 @@ function About() {
         </div>
 
         <div ref={aboutRef2} className="aboutContent2 animate__slower">
-          <h1 className="title-about">Skills</h1>
           <div className="skill-container">
-            <img className="skill-pic" src={images.htmlSkill} alt="" />{" "}
-            {/* html */}
-            <img className="skill-pic" src={images.cssSkill} alt="" />
-            {/* css*/}
-            <img className="skill-pic" src={images.javaScriptSkill} alt="" />
-            {/* JS*/}
-            <img className="skill-pic" src={images.reactSkill} alt="" />
-            {/* React*/}
-            <img className="skill-pic" src={images.postgreSqlSkill} alt="" />
-            {/* postgresql */}
-            <img className="skill-pic" src={images.nodeSkill} alt="" />
-            {/* node*/}
-            <img className="skill-pic" src={images.sassSkill} alt="" />
-            {/* sass*/}
-            <img className="skill-pic" src={images.expressSkill} alt="" />
-            {/* express.js */}
-            <img className="skill-pic" src={images.bootstratSkill} alt="" />
-            {/* bootstrap*/}
-            <img className="skill-pic" src={images.githubSkill} alt="" />
-            {/* github*/}
-            <img className="skill-pic" src={images.reactSkill} alt="" />
-            {/* canva*/}
+            <h1 className="section-title">Technical Skills</h1>
+            <p className="skill-description">
+              "I thrive on exploring diverse technologies, always eager to learn
+              and adapt. Let's innovate together!"
+            </p>
+            <img className="skill-pic" src={images.htmlSkill} alt="HTML" />{" "}
+            {/* HTML */}
+            <img className="skill-pic" src={images.cssSkill} alt="CSS" />
+            {/* CSS */}
+            <img
+              className="skill-pic"
+              src={images.javaScriptSkill}
+              alt="JavaScript"
+            />
+            {/* JavaScript */}
+            <img className="skill-pic" src={images.reactSkill} alt="React" />
+            {/* React */}
+            <img
+              className="skill-pic"
+              src={images.postgreSqlSkill}
+              alt="PostgreSQL"
+            />
+            {/* PostgreSQL */}
+            <img className="skill-pic" src={images.nodeSkill} alt="Node.js" />
+            {/* Node.js */}
+            <img className="skill-pic" src={images.sassSkill} alt="Sass" />
+            {/* Sass */}
+            <img
+              className="skill-pic"
+              src={images.expressSkill}
+              alt="Express.js"
+            />
+            {/* Express.js */}
+            <img
+              className="skill-pic"
+              src={images.bootstratSkill}
+              alt="Bootstrap"
+            />
+            {/* Bootstrap */}
+            <img className="skill-pic" src={images.githubSkill} alt="GitHub" />
+            {/* GitHub */}
+            <img className="skill-pic" src={images.canvaSkill} alt="Canva" />
+            {/* Canva */}
           </div>
         </div>
       </div>
@@ -73,3 +93,4 @@ function About() {
 }
 
 export default About;
+About.js;

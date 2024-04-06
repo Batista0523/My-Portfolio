@@ -9,7 +9,7 @@ import sassSkill from "../assets/sass.png";
 import expressSkill from "../assets/ex.png";
 import bootstratSkill from "../assets/bootstrap (1).png";
 import githubSkill from "../assets/github.png";
-
+import canvaSkill from "../assets/canva (1).png"
 export default {
   profilePic,
   htmlSkill,
@@ -22,4 +22,5 @@ export default {
   expressSkill,
   bootstratSkill,
   githubSkill,
+  canvaSkill,
 };

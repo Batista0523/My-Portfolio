@@ -1,39 +1,114 @@
 .about-body {
+  margin: 4rem;
   height: fit-content;
+  margin-bottom: 15rem;
+}
+
+
+
+.p-about-description {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 1rem;
+  margin: 3rem;
+  font-size: 2rem;
 }
 
 .about-container {
-  display: flex;
-  justify-content: center;
-  position: relative;
-  min-height: 100vh;
-  text-align: center;
-  z-index: 21;
+  width: auto;
+  /* border-radius: 3rem; */
+  margin: auto;
+  z-index: 1;
+  /* background-color: rgba(0, 0, 0, 0.491); */
+  /* box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25); */
+  padding: 3px;
 }
 
-.skill-container{
-  height:fit-content ;
-  background-color: aliceblue;
-  width: auto;
-  border-radius: 3rem;
+.section-title {
+  color: white;
+  font-family: "Great Vibes";
+  padding: 2rem;
+}
+.title-about{
+  color: rgb(8, 7, 7);
+  font-family: "Great Vibes";
+  padding: 2rem;
+}
+.skill-description,
+.about {
+  color: white;
   margin: 4rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2rem;
+}
+
+.skill-container {
+  width: 50rem;
+  border-radius: 3rem;
+  margin: auto;
   position: relative;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
 }
 
 .skill-pic {
-  padding: 30px;
+  padding: 3px;
   width: 150px;
   border-radius: 3rem;
   margin: 35px;
-  transition: transform 0.5s ease-in-out; 
+  transition: transform 0.5s ease-in-out;
 }
 
 .skill-pic:hover {
   transform: scale(1.6);
-  cursor: pointer; 
+  cursor: pointer;
+}
+
+.aboutContent {
+  width: 90%;
+  padding: 2em;
+  position: relative;
+  text-align: center;
+  margin: 10px;
+  border-radius: 15px;
+  color: black;
+  background-color: rgba(235, 238, 238, 0.783);
+  height: fit-content;
+  margin-left: 5rem;
+  margin-top: 15rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .aboutContent {
+    width: 80%;
+    margin: 3rem;
+    margin-top: 20rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .aboutContent {
+    width: 70%;
+    margin: 3rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutContent {
+    width: auto;
+    margin: 2rem;
+    padding: 20px;
+    display: inline-block;
+    height: fit-content;
+    position: relative;
+    padding-top: 7rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .aboutContent {
+    width: 90%;
+    margin-top: 8rem;
+  }
 }
 
 .about-container::before {
@@ -43,75 +118,17 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('/src/assets/aboutback.png');
   background-position: center center;
   background-size: cover;
   opacity: 1;
-  z-index: -1; 
-}
-
-.aboutContent {
-  display: inline-block;
-  width: 90%; 
-  padding: 3em;
-  position: relative;
-  text-align: center;
-  margin: 10px auto; 
-  border-radius: 15px;
-  color: white;
-  background-color: black;
-  height: fit-content;
-  margin-left: 5rem;
-  margin-top: 15rem;
-}
-
-
-@media screen and (max-width: 1200px) {
-  .aboutContent,
-  .aboutContent2 {
-      width: 80%;
-      margin: 3rem;
-      margin-top: 20rem;
-      
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .aboutContent,
-  .aboutContent2 {
-      width: 70%;
-      margin: 3rem
-  }
+  z-index: -1;
 }
 
 @media screen and (max-width: 768px) {
-  .aboutContent,
-  .aboutContent2 {
-    width: auto;
-    margin: 2rem;
-    padding: 20px;
-    display: inline-block;
-    height: fit-content;
-    position: relative;
-   padding-top: 7rem;
-   
-  }
-  
+  .about-container::before {
 
-  .about-container::before{
-
-    background-image: url('/src/assets/aboutback.png');
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
   }
-  
 }
-
-@media screen and (max-width: 576px) {
-  .aboutContent,
-  .aboutContent2 {
-      width: 90%; 
-      margin-top: 8rem; 
-  }
-} 
