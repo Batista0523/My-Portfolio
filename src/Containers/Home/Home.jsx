@@ -6,12 +6,10 @@ import Projects from "../Projects/Projects";
 import { images } from "../../constants";
 import "animate.css";
 
-
-
-
 function Home() {
   const [showResume, setShowResume] = useState(false);
-  const resumeUrl = "/porfolio-front-end/public/Resume/Elisaul_Batista_Resume_8_ID3_02292024.pdf";
+  const resumeUrl =
+    "/src/resume/elisaulresume.pdf";
   const handleShowResume = () => {
     setShowResume(true);
   };
@@ -20,19 +18,19 @@ function Home() {
     <div>
       <div className="home-container">
         <div className="homeContent animate__animated animate__zoomIn animate__slower">
-          <header className="infoMe">
-            <img className="profilePic" src={images.profilePic} alt="" />
+          <img className="profilePic" src={images.profilePic} alt="" />
+          <div className="infoMe">
             <h1 className="infoMeName">Elisaul Batista</h1>
+            <p className="p-description">
+              I'm a passionate <strong>Web Developer</strong> dedicated to
+              crafting engaging digital experiences that bring ideas to life.
+            </p>
             <h1 className="infoMeTitle">Software Engineer</h1>
             <a className="resumeDownload" href={resumeUrl}>
               {" "}
               Resume
             </a>
-            <p className="p-description">
-              I'm a passionate <strong>Web Developer</strong> dedicated to
-              crafting engaging digital experiences that bring ideas to life.
-            </p>
-          </header>
+          </div>
         </div>
       </div>
       <div id="about-section">

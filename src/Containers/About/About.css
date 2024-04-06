@@ -11,6 +11,31 @@
   z-index: 21;
 }
 
+.skill-container{
+  height:fit-content ;
+  background-color: aliceblue;
+  width: auto;
+  border-radius: 3rem;
+  margin: 4rem;
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+}
+
+.skill-pic {
+  padding: 30px;
+  width: 150px;
+  border-radius: 3rem;
+  margin: 35px;
+  transition: transform 0.5s ease-in-out; 
+}
+
+.skill-pic:hover {
+  transform: scale(1.6);
+  cursor: pointer; 
+}
+
 .about-container::before {
   content: "";
   position: absolute;
@@ -25,8 +50,7 @@
   z-index: -1; 
 }
 
-.aboutContent,
-.aboutContent2 {
+.aboutContent {
   display: inline-block;
   width: 90%; 
   padding: 3em;
