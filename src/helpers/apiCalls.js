@@ -1,5 +1,5 @@
-import axios from "axios";
-// const URL = import.meta.env.VITE_API;
+import axios from "axios"
+const URL = import.meta.env.VITE_DEPLOYED;
 
 const handleResponse = (response) => {
   const { success, data } = response.data;
@@ -19,7 +19,7 @@ const handleError = (error) => {
 };
 
 const getAllItems = () => {
-  return axios.get(`${URL}/events`).then(handleResponse).catch(handleError); // remember to change this to the actual endpoint for this project
+  return axios.get(`${URL}/project`).then(handleResponse).catch(handleError);
 };
 
 const getItem = (id) => {
