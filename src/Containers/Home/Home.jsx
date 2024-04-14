@@ -5,6 +5,7 @@ import Contact from "../Contacts/Contact";
 import Projects from "../Projects/Projects";
 import { images } from "../../constants";
 import "animate.css";
+import Weather from "../weather/Weather";
 
 function Home() {
   const [showResume, setShowResume] = useState(false);
@@ -17,6 +18,10 @@ function Home() {
     <div>
       <div className="home-container">
         <div className="homeContent animate__animated animate__zoomIn animate__slower">
+          <div className="weather-div">
+
+      <Weather/>
+          </div>
           <img className="profilePic" src={images.profilePic} alt="" />
           <div className="infoMe">
             <h1 className="infoMeName">Elisaul Batista</h1>

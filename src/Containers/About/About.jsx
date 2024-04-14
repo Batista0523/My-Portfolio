@@ -8,8 +8,7 @@ import { images } from "../../constants";
 function About() {
   const aboutRef1 = useRef(null);
   const aboutRef2 = useRef(null);
-  const resumeUrl =
-  "/src/resume/batistaresume.pdf";
+  const resumeUrl = "/src/resume/batistaresume.pdf";
   takeEffect(aboutRef1, aboutRef2);
 
   return (
@@ -25,19 +24,20 @@ function About() {
             pursuit of excellence, from crafting captivating user interfaces to
             optimizing backend operations. Proficient in HTML, CSS, JavaScript,
             and Express.js, I've spearheaded initiatives that improve
-            performance metrics and elevate user experience. Leveraging ,<strong>React</strong>, I
-            orchestrate seamless front-end solutions, driving engagement and
-            retention metrics upward. Driven by the opportunity to make a
-            difference, I create solutions that inspire and transform. With a
-            thirst for knowledge, I stay updated on the latest trends and
-            innovations, ensuring my skills are at the forefront of the
-            industry. Ready to embark on a journey of innovation and growth?
-            Let's connect and explore how we can shape the future together.
+            performance metrics and elevate user experience. Leveraging ,
+            <strong>React</strong>, I orchestrate seamless front-end solutions,
+            driving engagement and retention metrics upward. Driven by the
+            opportunity to make a difference, I create solutions that inspire
+            and transform. With a thirst for knowledge, I stay updated on the
+            latest trends and innovations, ensuring my skills are at the
+            forefront of the industry. Ready to embark on a journey of
+            innovation and growth? Let's connect and explore how we can shape
+            the future together.
           </p>
           <a target="_blank" className="resumeDownload" href={resumeUrl}>
-              {" "}
-              Resume
-            </a>
+            {" "}
+            Resume
+          </a>
         </div>
 
         <div ref={aboutRef2} className="aboutContent2 animate__slower">
@@ -88,6 +88,7 @@ function About() {
           </div>
         </div>
       </div>
+       
     </div>
   );
 }

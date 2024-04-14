@@ -1,0 +1,24 @@
+
+  .weather-div{
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+    border-radius: 45px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 90rem;
+   
+  }
+  .weather-container h1 {
+    font-size: 1.75em;
+    font-family: "Great Vibes";
+  }
+  
+  .weather-container p {
+    font-size: 1.75em;
+    margin-bottom: 5px;
+    font-family: "Cormorant", serif;
+  }
+  
+
+  
