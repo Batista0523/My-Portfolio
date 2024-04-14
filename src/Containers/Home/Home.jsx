@@ -8,8 +8,7 @@ import "animate.css";
 
 function Home() {
   const [showResume, setShowResume] = useState(false);
-  const resumeUrl =
-    "/src/resume/elisaulresume.pdf";
+ 
   const handleShowResume = () => {
     setShowResume(true);
   };
@@ -26,10 +25,7 @@ function Home() {
               crafting engaging digital experiences that bring ideas to life.
             </p>
             <h1 className="infoMeTitle">Software Engineer</h1>
-            <a className="resumeDownload" href={resumeUrl}>
-              {" "}
-              Resume
-            </a>
+           
           </div>
         </div>
       </div>

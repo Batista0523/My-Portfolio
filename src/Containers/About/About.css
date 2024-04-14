@@ -4,8 +4,6 @@
   margin-bottom: 15rem;
 }
 
-
-
 .p-about-description {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 1rem;
@@ -14,11 +12,9 @@
 }
 
 .about-container {
-  width: auto;
-  /* border-radius: 3rem; */
+  width: 100%;
   margin: auto;
   z-index: 1;
-
   padding: 3px;
 }
 
@@ -27,11 +23,13 @@
   font-family: "Great Vibes";
   padding: 2rem;
 }
-.title-about{
+
+.title-about {
   color: rgb(8, 7, 7);
   font-family: "Great Vibes";
   padding: 2rem;
 }
+
 .skill-description {
   color: white;
   margin: 4rem;
@@ -43,7 +41,7 @@
   width: 50rem;
   border-radius: 3rem;
   margin-left: 80px;
-margin-top: 3rem;
+  margin-top: 3rem;
   position: relative;
   z-index: 1;
   background-color: rgba(0, 0, 0, 0.5);
@@ -55,6 +53,8 @@ margin-top: 3rem;
   border-radius: 3rem;
   margin: 35px;
   transition: transform 0.5s ease-in-out;
+  opacity: 0.7;
+  filter: brightness(80%) saturate(70%);
 }
 
 .skill-pic:hover {
@@ -79,7 +79,7 @@ margin-top: 3rem;
 @media screen and (max-width: 1200px) {
   .aboutContent {
     width: 80%;
-    margin: 3rem;
+    margin: 3rem auto;
     margin-top: 20rem;
   }
 }
@@ -87,16 +87,20 @@ margin-top: 3rem;
 @media screen and (max-width: 992px) {
   .aboutContent {
     width: 70%;
-    margin: 3rem;
+    margin: 3rem auto;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .aboutContent {
-    width: auto;
+  .about-body {
     margin: 2rem;
+    margin-bottom: 8rem;
+  }
+
+  .aboutContent {
+    width: 90%;
+    margin: 2rem auto;
     padding: 20px;
-    display: inline-block;
     height: fit-content;
     position: relative;
     padding-top: 7rem;
@@ -125,7 +129,6 @@ margin-top: 3rem;
 
 @media screen and (max-width: 768px) {
   .about-container::before {
-
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
