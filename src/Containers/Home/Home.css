@@ -42,7 +42,8 @@
 .infoMe {
     left: 35rem;
     height: fit-content;
-    background-color: rgba(0, 0, 0, 0.325);
+    background-color: rgba(0, 0, 0, 0.64);
+    box-shadow: 0 0.45em 0.5em 0 rgb(0, 0, 0);
     border: none;
     border-radius: 45px;
     padding: 1.5rem;
@@ -50,7 +51,7 @@
     z-index: center;
     position: relative;
     font-family: "Cormorant", serif;
-    bottom: 35rem;
+    top: -25rem;
 }
 
 .profilePic {

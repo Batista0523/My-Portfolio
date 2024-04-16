@@ -39,9 +39,7 @@ function About() {
             Resume
           </a>
         </div>
-     
             <Time/>
-       
         <div ref={aboutRef2} className="aboutContent2 animate__slower">
           <div className="skill-container">
             <h1 className="section-title">Technical Skills and Tools</h1>

@@ -6,19 +6,16 @@ import Projects from "../Projects/Projects";
 import { images } from "../../constants";
 import "animate.css";
 import Weather from "../weather/Weather";
-
+import Yankees from "../../Baseball/Yankees";
 
 function Home() {
-
-
   return (
     <div className="app-main">
       <div className="home-container">
+        {/* <Yankees/> */}
         <div className="homeContent animate__animated animate__zoomIn animate__slower">
-       
-            <Weather/>
-        
-        
+          <Weather />
+
           {/* <img className="profilePic" src={images.profilePic} alt="" /> */}
           <div className="infoMe">
             <h1 className="infoMeName">Elisaul Batista</h1>
@@ -28,6 +25,7 @@ function Home() {
             </p>
             <h1 className="infoMeTitle">Software Engineer</h1>
           </div>
+        <Yankees />
         </div>
       </div>
       <div className="about-part" id="about-section">

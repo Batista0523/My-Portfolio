@@ -1,21 +1,22 @@
 .weather-div {
-  background-color: rgba(11, 11, 11, 0.5);
+  background-color: rgba(0, 0, 0, 0.64);
+  box-shadow: 0 0.45em 0.5em 0 rgb(0, 0, 0);
   border-radius: 45px;
   padding: 20px;
   position: relative;
   width: 185px;
-  right: 90rem;
-  left: 20px;
-  bottom: 259px;
+  left: 6rem;
+  bottom: 25px;
 }
 
-.weather-div > * {
-  margin-bottom: -15px; 
+.weather-div>* {
+  margin-bottom: -15px;
   padding: 20px;
 }
 
-.weather-div > *:not(:last-child) {
-  border-bottom: 1px solid rgb(255, 255, 255);
+.weather-div>*:not(:last-child) {
+  border-bottom: 1px solid rgb(252, 249, 249);
+ 
 }
 
 .weather-container h1,

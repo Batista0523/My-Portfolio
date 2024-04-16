@@ -30,8 +30,9 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.786);
-    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+ 
+    background-color: rgba(0, 0, 0, 0.64);
+    box-shadow: 0 0.45em 0.5em 0 rgb(0, 0, 0);
 }
 
 .nav-link {

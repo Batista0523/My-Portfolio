@@ -1,0 +1,25 @@
+.yankees-container {
+    top: -45rem;
+    background-color: rgba(0, 0, 0, 0.64);
+    box-shadow: 0 0.45em 0.5em 0 rgb(0, 0, 0);
+    border-radius: 45px;
+    padding: 20px;
+    position: relative;
+    width: 185px;
+    color: white;
+    font-size: large;
+    left: 98rem;
+    height: fit-content;
+}
+
+.yankees-container > *:not(:last-child) {
+    border-bottom: 1px solid rgb(252, 249, 249);
+    padding-bottom: 5px; 
+}
+
+
+
+.yankees-container p {
+    font-size: 20px;
+    border-bottom: 1px solid rgb(252, 249, 249);
+}
