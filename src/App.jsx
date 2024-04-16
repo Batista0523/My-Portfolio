@@ -8,7 +8,7 @@ import Projects from "./Containers/Projects/Projects";
 
 function App() {
   return (
-    <div className="app-main">
+    <div >
       <Router>
         <NavBar />
         <Routes>

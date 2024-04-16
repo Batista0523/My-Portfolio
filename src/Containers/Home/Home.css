@@ -1,8 +1,7 @@
 .home-container {
-    position: relative;
     min-height: 100vh;
     text-align: center;
-    z-index: 21;
+    z-index: 1;
 }
 
 .home-container::before {
@@ -14,7 +13,7 @@
     height: 100%;
     background-image: url('/src/assets/back1.png');
     background-attachment: fixed;
-    background-position: center; 
+    background-position: center;
     background-size: cover;
     opacity: 1;
 }
@@ -27,9 +26,10 @@
 }
 
 .homeContent {
-    display: inline-block;
+
+
     max-width: 95%;
-    padding: 60px; 
+    padding: 60px;
     position: relative;
     text-align: center;
     vertical-align: middle;
@@ -40,24 +40,24 @@
 }
 
 .infoMe {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center;
+    left: 35rem;
+    height: fit-content;
     background-color: rgba(0, 0, 0, 0.325);
     border: none;
     border-radius: 45px;
     padding: 1.5rem;
-    margin: 2rem auto; 
     max-width: 800px;
+    z-index: center;
+    position: relative;
     font-family: "Cormorant", serif;
+    bottom: 35rem;
 }
 
 .profilePic {
     width: 200px;
     border-radius: 50%;
     margin-bottom: 1rem;
-    height: fit-content; 
+    height: fit-content;
 }
 
 .infoMeName {
@@ -75,7 +75,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: white; 
+    background-color: white;
 }
 
 .infoMeName::before {
@@ -92,16 +92,17 @@
     margin: 10px;
     padding: 12px;
     color: rgb(249, 245, 245);
-    font-size: 28px; 
+    font-size: 28px;
     background-color: rgba(45, 40, 40, 0.451);
     border-radius: 15px;
     text-align: center;
     font-family: "Cormorant", serif;
+    font-size: 1.75rem;
 }
 
 .resumeDownload:hover {
     background-color: rgba(8, 164, 86, 0.586);
-} 
+}
 
 .resumeDownload {
     cursor: pointer;
@@ -109,12 +110,22 @@
 }
 
 .p-description {
-    font-size: 24px; 
+    font-size: 1.75rem;
     color: white;
     padding: 5px;
     margin: 5px;
 }
-
+.app-main {
+    display: flex;
+    background-image: url("../src/assets/ny.png");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    flex-direction: column;
+  }
+  
+  
 @media screen and (max-width: 1200px) {
     .homeContent {
         padding: 4em;
@@ -141,7 +152,7 @@
     .home-container::before {
         background-image: url('/src/assets/back1.png');
         background-attachment: fixed;
-        background-position: center; 
+        background-position: center;
         background-size: cover;
     }
 
@@ -203,7 +214,7 @@
 
     .infoMe {
         margin: 1rem auto;
-        max-width: 500px; 
+        max-width: 500px;
     }
 
     .profilePic {

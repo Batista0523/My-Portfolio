@@ -1,10 +1,28 @@
 .about-body {
   margin: 4rem;
   height: fit-content;
-  margin-bottom: 15rem;
- 
-}
+  /* margin-bottom: 15rem; */
 
+
+
+}
+/* .aboutContent2 {
+bottom: 53rem;
+display: flex;
+ position: relative;
+ margin-left: 18px;
+ padding: 10px;
+ 
+} */
+.about-part{
+  background-image: url("/src/assets/aboutback.png");
+  background-attachment: fixed;
+  background-position: center; 
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+
+}
 .p-about-description {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 1rem;
@@ -14,13 +32,11 @@
 
 .about-container {
   width: 100%;
-  margin: auto;
-  z-index: 1;
-  padding: 3px;
+ 
 }
 
 .section-title {
-  color: white;
+  color: rgb(8, 7, 7);
   font-family: "Great Vibes";
   padding: 2rem;
 }
@@ -32,20 +48,21 @@
 }
 
 .skill-description {
-  color: white;
-  margin: 4rem;
+  color:rgb(8, 7, 7);
+  margin: auto;
+  min-height: fit-content;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 2rem;
+  padding: 10px;
 }
-
 .skill-container {
   width: 50rem;
   border-radius: 3rem;
-  margin-left: 80px;
-  margin-top: 3rem;
+  margin-left: 60px;
   position: relative;
-  z-index: 1;
-  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 52rem;
+  left: 20px;
+  background-color: rgba(235, 238, 238, 0.783);
 }
 
 .skill-pic {
@@ -54,8 +71,8 @@
   border-radius: 3rem;
   margin: 35px;
   transition: transform 0.5s ease-in-out;
-  opacity: 0.7;
-  filter: brightness(80%) saturate(70%);
+  opacity: 0.9;
+  filter: brightness(100%) saturate(70%);
 }
 
 .skill-pic:hover {
@@ -65,16 +82,17 @@
 
 .aboutContent {
   width: 90%;
-  padding: 2em;
+  padding: 2rem;
   position: relative;
   text-align: center;
   margin: 10px;
   border-radius: 15px;
-  color: black;
+  color: rgb(8, 7, 7);
   background-color: rgba(235, 238, 238, 0.783);
   height: fit-content;
   margin-left: 5rem;
   margin-top: 15rem;
+
 }
 
 @media screen and (max-width: 1200px) {
@@ -107,6 +125,7 @@
     padding-top: 7rem;
   }
 }
+
 
 @media screen and (max-width: 576px) {
   .aboutContent {

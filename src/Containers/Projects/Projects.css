@@ -19,12 +19,6 @@
     opacity: 1;
 }
 
-.overlay {
-    position: relative;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-}
 
 .link {
     text-decoration: none;
@@ -35,7 +29,7 @@
 }
 
 .link:hover {
-    color: brown;
+    color: rgba(91, 222, 47, 0.439);
 }
 
 .projects-card {
@@ -47,14 +41,11 @@
 
 .projectContent {
     display: inline-block;
-    max-width: 95%;
     padding: 6em;
-    position: relative;
-    text-align: center;
-    vertical-align: middle;
+    position: absolute;
     z-index: 1;
     color: white;
-    margin: 10rem auto;
+    margin-right: 113rem;
 }
 
 @media screen and (max-width: 1200px) {

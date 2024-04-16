@@ -37,12 +37,14 @@ function Weather() {
   }, [weatherKey, weatherHost, weatherUrl]);
 
   return (
-    <div className="weather-container">
+    <div className="weather-div">
       <h1>Weather</h1>
       <p>City {weathers.City}</p>
-      <p> {weathers.State}</p>
-      <p>{weathers.TempF}</p>
+      <p>{weathers.State} </p>
+      <h3>{weathers.TempF}</h3>
       <p>{weathers.Weather}</p>
+      <p>Sunrise : {weathers.Sunrise} AM</p>
+      <p>Sunset : {weathers.Sunset} PM</p>
     </div>
   );
 }

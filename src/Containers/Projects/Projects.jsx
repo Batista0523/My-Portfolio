@@ -11,14 +11,13 @@ function Projects() {
       try {
         const response = await getAllItems(endpoint);
         setItems(response);
+        console.log(response,"---<")
       } catch (error) {
         console.error("Error fetching items", error);
       }
     };
     fetchItem();
-  }, ); 
-
-
+  }, []); 
 
   return (
     <div>

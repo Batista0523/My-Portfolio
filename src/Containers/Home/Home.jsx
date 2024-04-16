@@ -7,22 +7,19 @@ import { images } from "../../constants";
 import "animate.css";
 import Weather from "../weather/Weather";
 
+
 function Home() {
-  const [showResume, setShowResume] = useState(false);
- 
-  const handleShowResume = () => {
-    setShowResume(true);
-  };
+
 
   return (
-    <div>
+    <div className="app-main">
       <div className="home-container">
         <div className="homeContent animate__animated animate__zoomIn animate__slower">
-          <div className="weather-div">
-
-      <Weather/>
-          </div>
-          <img className="profilePic" src={images.profilePic} alt="" />
+       
+            <Weather/>
+        
+        
+          {/* <img className="profilePic" src={images.profilePic} alt="" /> */}
           <div className="infoMe">
             <h1 className="infoMeName">Elisaul Batista</h1>
             <p className="p-description">
@@ -30,11 +27,10 @@ function Home() {
               crafting engaging digital experiences that bring ideas to life.
             </p>
             <h1 className="infoMeTitle">Software Engineer</h1>
-           
           </div>
         </div>
       </div>
-      <div id="about-section">
+      <div className="about-part" id="about-section">
         <About />
       </div>
       <div id="projects-section">

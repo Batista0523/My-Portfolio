@@ -3,7 +3,7 @@ import "./About.css";
 import "animate.css";
 import { takeEffect } from "../../helpers/animatedFunction";
 import { images } from "../../constants";
-
+import Time from "../../time/Time";
 
 function About() {
   const aboutRef1 = useRef(null);
@@ -15,7 +15,7 @@ function About() {
     <div className="about-body">
       <div className="about-container">
         <div ref={aboutRef1} className="aboutContent animate__slower">
-          <h1 className="title-about">About Me</h1>
+          <h1 className="title-about">Who am I</h1>
           <p className="p-about-description">
             Welcome! I'm a dynamic Full Stack Developer based in New York City,
             where innovation thrives. Fluent in both Spanish and English, I
@@ -39,7 +39,9 @@ function About() {
             Resume
           </a>
         </div>
-
+     
+            <Time/>
+       
         <div ref={aboutRef2} className="aboutContent2 animate__slower">
           <div className="skill-container">
             <h1 className="section-title">Technical Skills and Tools</h1>
