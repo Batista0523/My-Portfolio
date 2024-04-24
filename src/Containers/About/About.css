@@ -1,6 +1,6 @@
 .about-body {
   margin: 4rem;
-  height: 190vh;
+  height: 180vh;
 
 }
 
@@ -79,13 +79,12 @@
   position: relative;
   text-align: center;
   margin: 10px;
-
-border-radius: 3rem;
+  border-radius: 3rem;
   color: rgb(8, 7, 7);
   background-color: rgb(235, 238, 238);
   height: fit-content;
   left: 5rem;
-   top: 10rem;
+  top: 10rem;
 
 }
 

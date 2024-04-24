@@ -23,13 +23,13 @@ function Projects() {
     <div>
       <div className="project-container">
         <div className="projectContent">
-          <h1>Projects</h1>
+          <h1 className="title">Projects</h1>
           <div className="projects-card">
             {items.map((item,) => (
-              <div key={item.id}>
+              <div className="projects-api" key={item.id}>
                 <h1>{item.title}</h1>
                 <p>{item.descriptions}</p>
-                <a className="link" href={item.deployedlink} target="_blank">Live Demo</a>
+                <a className="link" href={item.deployedlink} target="_blank">Demo</a>
                 <a className="link" href={item.repolink} target="_blank">Github</a>
               </div>
             ))}

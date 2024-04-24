@@ -17,7 +17,7 @@ function Yankees() {
           method: "Get",
           url: baseballUrl,
           params: {
-            gameDate:currentDate,
+            gameDate: currentDate,
             topPerformers: "true",
           },
           headers: {
@@ -72,17 +72,15 @@ function Yankees() {
             {game.away} VS {game.home}
           </p>
           <p>Game Time {game.gameTime}</p>
-          <p>Game Status {game.gameStatus}</p>
           <p>Away {game.away}</p>
           <p>Home {game.home}</p>
-          <p>Result {game.awayResult}</p>
-
           <p>
             Scores :{" "}
             {game.lineScore
-              ? ` Away ${game.lineScore.away.R} -- Home ${game.lineScore.home.R}`
+              ? ` Away R:${game.lineScore.away.R} Home R: ${game.lineScore.home.R}  `
               : "N/A"}
           </p>
+          <p>Game Status {game.gameStatus}</p>
         </div>
       ))}
     </div>
