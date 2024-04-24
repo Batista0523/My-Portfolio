@@ -6,7 +6,7 @@ import { images } from "../../constants";
 import Time from "../../time/Time";
 
 function About() {
-  const resumeUrl = "/porfolio-front-end/public/resume/Elisaul-Batista-Full Stack Developer.pdf";
+  const resumeUrl = "/porfolio-front-end/resume/Elisaul-Batista-Full Stack Developer.pdf";
 
   return (
     <div className="about-body">
@@ -23,7 +23,7 @@ function About() {
             solutions that inspire and transform. Together, we'll navigate the
             ever-evolving landscape of technology to shape the future.
           </p>
-          <a target="_blank" className="resumeDownload" href={resumeUrl}>
+          <a target="_blank" className="resumeDownload" href='/porfolio-front-end/resume/Elisaul-Batista-Full Stack Developer.pdf'>
             {" "}
             Resume
           </a>
