@@ -50,12 +50,12 @@
 
 .skill-container {
   width:80rem;
-  border-radius: 3rem;
   margin: 50px;
   position: relative;
-  bottom: 30rem;
+  bottom: 33rem;
   left: 30px;
-  background-color: rgba(235, 238, 238, 0.783);
+  border-radius: 3rem;
+  background-color: rgb(235, 238, 238);
 }
 
 .skill-pic {
@@ -79,9 +79,10 @@
   position: relative;
   text-align: center;
   margin: 10px;
-  border-radius: 15px;
+
+border-radius: 3rem;
   color: rgb(8, 7, 7);
-  background-color: rgba(235, 238, 238, 0.783);
+  background-color: rgb(235, 238, 238);
   height: fit-content;
   left: 5rem;
    top: 10rem;

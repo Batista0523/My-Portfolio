@@ -6,9 +6,7 @@ import { images } from "../../constants";
 import Time from "../../time/Time";
 
 function About() {
-
   const resumeUrl = "/src/resume/batistaresume.pdf";
-
 
   return (
     <div className="about-body">
@@ -16,30 +14,22 @@ function About() {
         <div className="aboutContent">
           <h1 className="title-about">Who am I</h1>
           <p className="p-about-description">
-            Welcome! I'm a dynamic Full Stack Developer based in New York City,
-            where innovation thrives. Fluent in both Spanish and English, I
-            bring a blend of creativity and technical expertise to every
-            project. My journey in web development is marked by a relentless
-            pursuit of excellence, from crafting captivating user interfaces to
-            optimizing backend operations. Proficient in HTML, CSS, JavaScript,
-            and Express.js, I've spearheaded initiatives that improve
-            performance metrics and elevate user experience. Leveraging ,
-            <strong>React</strong>, I orchestrate seamless front-end solutions,
-            driving engagement and retention metrics upward. Driven by the
-            opportunity to make a difference, I create solutions that inspire
-            and transform. With a thirst for knowledge, I stay updated on the
-            latest trends and innovations, ensuring my skills are at the
-            forefront of the industry. Ready to embark on a journey of
-            innovation and growth? Let's connect and explore how we can shape
-            the future together.
+            👋 Hello! I'm a versatile Full Stack Developer based in vibrant New
+            York City. Fluent in Spanish and English, I blend creativity with
+            technical prowess to craft exceptional digital experiences. 🚀
+            Specializing in web development, I create captivating user
+            interfaces and optimize backend operations to drive performance and
+            elevate user satisfaction. 💡 Let's collaborate to create innovative
+            solutions that inspire and transform. Together, we'll navigate the
+            ever-evolving landscape of technology to shape the future.
           </p>
           <a target="_blank" className="resumeDownload" href={resumeUrl}>
             {" "}
             Resume
           </a>
         </div>
-            <Time/>
-        <div  className="aboutContent2 ">
+        <Time />
+        <div className="aboutContent2 ">
           <div className="skill-container">
             <h1 className="section-title">Technical Skills and Tools</h1>
             <p className="skill-description">
@@ -87,7 +77,6 @@ function About() {
           </div>
         </div>
       </div>
-       
     </div>
   );
 }
