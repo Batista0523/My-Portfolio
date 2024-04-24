@@ -6,7 +6,7 @@ import { images } from "../../constants";
 import Time from "../../time/Time";
 
 function About() {
-  const resumeUrl = "/src/resume/batistaresume.pdf";
+  const resumeUrl = "/src/resume/Elisaul-Batista-Full Stack Developer.pdf";
 
   return (
     <div className="about-body">
