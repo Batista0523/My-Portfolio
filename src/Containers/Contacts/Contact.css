@@ -1,8 +1,8 @@
 .contact-container {
-    /* position: relative; */
-    /* min-height: 100vh; */
-    /* text-align: center; */
-    /* z-index: 21; */
+    position: relative; 
+     min-height: 80vh; 
+     text-align: center; 
+     z-index: 1;
 }
 /* if you need the background gor contact ehtn needs position relative from line 1 and then line 38*/
 

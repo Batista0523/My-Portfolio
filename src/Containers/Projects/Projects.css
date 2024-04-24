@@ -1,6 +1,6 @@
 .project-container {
     position: relative;
-    min-height: 100vh;
+    min-height: 120vh;
     text-align: center;
     z-index: 21;
 }

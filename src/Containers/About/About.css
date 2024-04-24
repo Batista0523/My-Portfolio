@@ -1,28 +1,19 @@
 .about-body {
   margin: 4rem;
-  height: fit-content;
-  /* margin-bottom: 15rem; */
-
-
+  height: 190vh;
 
 }
-/* .aboutContent2 {
-bottom: 53rem;
-display: flex;
- position: relative;
- margin-left: 18px;
- padding: 10px;
- 
-} */
-.about-part{
+
+.about-part {
   background-image: url("/src/assets/aboutback.png");
   background-attachment: fixed;
-  background-position: center; 
+  background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: row;
 
 }
+
 .p-about-description {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 1rem;
@@ -32,7 +23,7 @@ display: flex;
 
 .about-container {
   width: 100%;
- 
+
 }
 
 .section-title {
@@ -48,20 +39,22 @@ display: flex;
 }
 
 .skill-description {
-  color:rgb(8, 7, 7);
+  color: rgb(8, 7, 7);
   margin: auto;
   min-height: fit-content;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 2rem;
   padding: 10px;
+  
 }
+
 .skill-container {
-  width: 50rem;
+  width:80rem;
   border-radius: 3rem;
-  margin-left: 60px;
+  margin: 50px;
   position: relative;
-  bottom: 52rem;
-  left: 20px;
+  bottom: 30rem;
+  left: 30px;
   background-color: rgba(235, 238, 238, 0.783);
 }
 
@@ -90,8 +83,8 @@ display: flex;
   color: rgb(8, 7, 7);
   background-color: rgba(235, 238, 238, 0.783);
   height: fit-content;
-  margin-left: 5rem;
-  margin-top: 15rem;
+  left: 5rem;
+   top: 10rem;
 
 }
 

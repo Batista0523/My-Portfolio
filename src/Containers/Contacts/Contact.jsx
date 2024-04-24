@@ -5,9 +5,9 @@ import "./Contact.css";
 function Contact() {
   const endpoint = "contact";
   const [formData, setFormData] = useState({
-    username: "",
-    email: "",
-    msg: "",
+    username: '',
+    email: '',
+    msg: '',
   });
 
   const handleChange = (e) => {
@@ -28,9 +28,9 @@ function Contact() {
         msg: msg,
       });
       setFormData({
-        username: "",
-        email: "",
-        msg: "",
+        username: '',
+        email: '',
+        msg: '',
       });
       alert("🚀 🎉 Message sent successfully 🥳✨🚀");
     } catch (error) {

@@ -1,20 +1,19 @@
 import React, { useRef, useEffect } from "react";
 import "./About.css";
 import "animate.css";
-import { takeEffect } from "../../helpers/animatedFunction";
+
 import { images } from "../../constants";
 import Time from "../../time/Time";
 
 function About() {
-  const aboutRef1 = useRef(null);
-  const aboutRef2 = useRef(null);
+
   const resumeUrl = "/src/resume/batistaresume.pdf";
-  takeEffect(aboutRef1, aboutRef2);
+
 
   return (
     <div className="about-body">
       <div className="about-container">
-        <div ref={aboutRef1} className="aboutContent animate__slower">
+        <div className="aboutContent">
           <h1 className="title-about">Who am I</h1>
           <p className="p-about-description">
             Welcome! I'm a dynamic Full Stack Developer based in New York City,
@@ -40,7 +39,7 @@ function About() {
           </a>
         </div>
             <Time/>
-        <div ref={aboutRef2} className="aboutContent2 animate__slower">
+        <div  className="aboutContent2 ">
           <div className="skill-container">
             <h1 className="section-title">Technical Skills and Tools</h1>
             <p className="skill-description">
