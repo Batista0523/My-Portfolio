@@ -18,12 +18,6 @@
     opacity: 1;
 }
 
-.overlay {
-    position: relative;
-    z-index: 1;
-    background-color: rgba(0, 0, 0, 0.64);
-    box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
-}
 
 .homeContent {
   
@@ -115,13 +109,13 @@
     margin: 5px;
 }
 .app-main {
-    display: flex;
+    display: block;
     background-image: url("../src/assets/nyc.png");
     background-attachment: fixed;
     background-position: center center;
     background-size: cover;
     opacity: 1;
-    max-width:200rem;
+    
     flex-direction: column;
   }
   

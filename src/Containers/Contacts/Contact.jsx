@@ -44,7 +44,7 @@ function Contact() {
       <div className="contact-container">
         <div className="contactContent">
           <div className="contact-form">
-            <form onSubmit={handleSubmit}>
+            <form className="contact-form" onSubmit={handleSubmit}>
               <input
                 className="input"
                 placeholder="Name"
