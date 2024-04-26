@@ -108,17 +108,7 @@
     padding: 5px;
     margin: 5px;
 }
-.app-main {
-    display: block;
-    background-image: url("../src/assets/nyc.png");
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    
-    flex-direction: column;
-  }
-  
+
   
 @media screen and (max-width: 1200px) {
     .homeContent {

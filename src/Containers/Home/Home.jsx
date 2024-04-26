@@ -26,6 +26,7 @@ function Home() {
             <h1 className="infoMeTitle">Software Engineer</h1>
           </div>
         <Yankees />
+        
         </div>
       </div>
       <div className="about-part" id="about-section">

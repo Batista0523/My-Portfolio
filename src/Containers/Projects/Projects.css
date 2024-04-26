@@ -11,17 +11,16 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 92%;
     background-image: url('/src/assets/projectBack.png');
     background-attachment: fixed;
     background-position: center right; 
     background-size: cover;
-    
 }
 
 .title{
     font-size: 2.75rem;
-   color: rgb(6, 6, 6);
+    color: rgb(6, 6, 6);
 }
 .link {
     text-decoration: none;
