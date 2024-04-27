@@ -119,9 +119,14 @@
         width: 30rem;
         display: flex;
     }
-
+.home-container{
+        /* min-height: 100vh; */
+        text-align: center;
+        z-index: 1;
+        width: 110em;
+}
     .infoMe {
-        left: 35rem;
+        left: 68rem;
         height: fit-content;
         background-color: rgba(0, 0, 0, 0.64);
         box-shadow: 0 0.45em 0.5em 0 rgb(0, 0, 0);
@@ -133,7 +138,6 @@
         position: relative;
         font-family: "Cormorant", serif;
         top: 13rem;
-        
         padding: -1rem;
     }
 
@@ -142,7 +146,7 @@
         background-attachment: fixed;
         background-position: center;
         background-size: auto;
-        width: 71em;
+        width: 108em;
     }
 
 

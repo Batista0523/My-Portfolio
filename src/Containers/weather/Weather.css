@@ -45,12 +45,12 @@ bottom: -14rem; */
   .weather-div {
 
     background-color: rgba(0, 0, 0, 0.64);
-  box-shadow: 0 0.45em 0.5em 0 rgb(0, 0, 0);
-  border-radius: 45px;
-  padding: 20px;
-  position: relative;
-  width: 185px;
-  left: -2rem;
-  bottom: -14rem;
+    box-shadow: 0 0.45em 0.5em 0 rgb(0, 0, 0);
+    border-radius: 45px;
+    padding: 20px;
+    position: relative;
+    width: 185px;
+    left: -1rem;
+    bottom: -13rem;
   }
 }
