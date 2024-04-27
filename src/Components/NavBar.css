@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Sacramento&family=Tangerine:wght@400;700&display=swap');
-
 .app_nav {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     height: fit-content;
@@ -10,17 +8,17 @@
     top: 0;
     z-index: 100;
     color: white;
-    background-size: cover; 
-    background-repeat: no-repeat; 
+    background-size: cover;
+    background-repeat: no-repeat;
     opacity: 3.9;
 }
 
 .nav-logo {
     font-family: "Great Vibes", cursive;
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
     font-weight: 400;
     font-style: normal;
-    margin: 0; 
+    margin: 0;
 }
 
 .nav-container {
@@ -29,16 +27,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
- 
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.64);
     box-shadow: 0 0.45em 0.5em 0 rgb(0, 0, 0);
 }
 
 .nav-link {
     text-decoration: none;
-    font-size: 1.2rem; 
-    padding: 0.5rem 1rem; 
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
     color: inherit;
     font-family: "Tangerine", cursive;
     font-weight: 700;
@@ -51,27 +48,27 @@
 }
 
 .nav-links > * {
-    margin-left: 1rem; 
+    margin-left: 1rem;
 }
 
-
+/* Media query for screens smaller than 768px */
 @media screen and (max-width: 768px) {
     .app_nav {
-        flex-direction: column; 
-        align-items: flex-start; 
-        padding: 0.5rem 1rem; 
-        background-color: rgba(0, 0, 0, 0.9); 
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0.5rem 1rem;
+        background-color: rgba(0, 0, 0, 0.9);
         position: sticky;
     }
 
     .nav-container {
-        width: 100%; 
+        width: 100%;
         justify-content: flex-start;
     }
 
     .nav-link {
-        font-size: 1rem; 
-        padding: 0.4rem 0.8rem; 
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
     }
 
     .nav-links {
@@ -80,6 +77,6 @@
     }
 
     .nav-links > * {
-        margin: 0.5rem 0; 
+        margin: 0.5rem 0;
     }
 }

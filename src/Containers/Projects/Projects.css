@@ -58,21 +58,10 @@
      top: 10rem;   
      align-items: center; 
      left: 3rem;
-    display: flex;
+   
   
 }
 
-@media screen and (max-width: 1200px) {
-    .projectContent {
-        padding: 4em;
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .projectContent {
-        padding: 3em;
-    }
-}
 
 @media screen and (max-width: 768px) {
     .projectContent {
@@ -81,9 +70,3 @@
     }
 }
 
-@media screen and (max-width: 576px) {
-    .projectContent {
-        padding: 1em;
-        margin: 3rem auto; 
-    }
-}

@@ -50,6 +50,7 @@ function Contact() {
                 placeholder="Name"
                 type="text"
                 name="username"
+                required
                 value={formData.username}
                 onChange={handleChange}
               />
@@ -58,6 +59,7 @@ function Contact() {
                 placeholder="Email"
                 type="email"
                 name="email"
+                required
                 value={formData.email}
                 onChange={handleChange}
               />
@@ -65,6 +67,7 @@ function Contact() {
                 className="input"
                 placeholder="Your Message"
                 name="msg"
+                required
                 value={formData.msg}
                 onChange={handleChange}
               />
