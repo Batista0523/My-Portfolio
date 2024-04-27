@@ -1,14 +1,9 @@
 
+
 body {
   margin: 0;
-  display: flex;
-  width: 100%;
+  display:flex;
+  /* place-items: center; */
+width: 100%;
 }
 
-
-@media screen and (max-width: 768px) {
-  body {
-    flex-direction: row; 
-    align-items: center; 
-  }
-}

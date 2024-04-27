@@ -29,13 +29,13 @@ function Home() {
         
         </div>
       </div>
-      <div className="about-part" id="about-section">
+      <div className="about-part-home" id="about-section">
         <About />
       </div>
-      <div id="projects-section">
+      <div className="projects-section-home" id="projects-section">
         <Projects />
       </div>
-      <div id="contact-section">
+      <div className="contact-section-home" id="contact-section">
         <Contact />
       </div>
     </div>
