@@ -20,9 +20,9 @@
 
 
 .homeContent {
-  
+
     padding: 60px;
- 
+
     text-align: center;
     vertical-align: middle;
     z-index: 1;
@@ -109,22 +109,40 @@
     margin: 5px;
 }
 
-  
+
 
 
 
 @media screen and (max-width: 768px) {
     .homeContent {
-      margin: 3rem;
-      width: 30rem;
-      display: flex;
+        margin: 3rem;
+        width: 30rem;
+        display: flex;
+    }
+
+    .infoMe {
+        left: 35rem;
+        height: fit-content;
+        background-color: rgba(0, 0, 0, 0.64);
+        box-shadow: 0 0.45em 0.5em 0 rgb(0, 0, 0);
+        border: none;
+        border-radius: 45px;
+        padding: 1.5rem;
+        max-width: 800px;
+        z-index: center;
+        position: relative;
+        font-family: "Cormorant", serif;
+        top: 13rem;
+        
+        padding: -1rem;
     }
 
     .home-container::before {
-        background-image: url('/src/assets/back1.png');
+        background-image: url(/src/assets/back1.png);
         background-attachment: fixed;
         background-position: center;
-        background-size: cover;
+        background-size: auto;
+        width: 71em;
     }
 
 

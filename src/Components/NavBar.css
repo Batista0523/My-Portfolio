@@ -62,8 +62,8 @@
     }
 
     .nav-container {
-        width: 100%;
-        justify-content: flex-start;
+        width: 99%;
+        justify-content: space-evenly;
     }
 
     .nav-link {

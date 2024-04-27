@@ -4,7 +4,7 @@ import About from "../About/About";
 import Contact from "../Contacts/Contact";
 import Projects from "../Projects/Projects";
 import { images } from "../../constants";
-import "animate.css";
+// import "animate.css";
 import Weather from "../weather/Weather";
 import Yankees from "../../Baseball/Yankees";
 
@@ -12,8 +12,8 @@ function Home() {
   return (
     <div className="app-main">
       <div className="home-container">
-        {/* <Yankees/> */}
-        <div className="homeContent animate__animated animate__zoomIn animate__slower">
+       
+        <div className="homeContent "> {/*  animate__animated animate__zoomIn animate__slower*/}
           <Weather />
 
           {/* <img className="profilePic" src={images.profilePic} alt="" /> */}

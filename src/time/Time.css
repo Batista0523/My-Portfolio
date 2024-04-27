@@ -35,9 +35,11 @@
 }
 @media screen and (max-width: 768px) {
   .timer-container{
-   margin: auto;
-   height: fit-content;
-   position: relative;
-   padding: 3rem;
+    margin: 0;
+    height: fit-content;
+    position: relative;
+    padding: 3rem;
+    width: 35rem;
+    left: 21em;
   }
  }
