@@ -4,10 +4,11 @@ import "./Contact.css";
 
 function Contact() {
   const endpoint = "contact";
+
   const [formData, setFormData] = useState({
-    username: '',
-    email: '',
-    msg: '',
+    username: "",
+    email: "",
+    msg: "",
   });
 
   const handleChange = (e) => {
@@ -21,17 +22,20 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const { username, email, msg } = formData;
+
     try {
       await addItem(endpoint, {
-        username: username,
-        email: email,
-        msg: msg,
+        username,
+        email,
+        msg,
       });
+
       setFormData({
-        username: '',
-        email: '',
-        msg: '',
+        username: "",
+        email: "",
+        msg: "",
       });
+
       alert("🚀 🎉 Message sent successfully 🥳✨🚀");
     } catch (error) {
       console.error("Error sending message:", error);
