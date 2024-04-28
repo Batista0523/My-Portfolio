@@ -143,10 +143,14 @@
 
     .home-container::before {
         background-image: url(/src/assets/back1.png);
-        background-attachment: fixed;
+        background-attachment: scroll;
         background-position: center;
-        background-size: auto;
-        width: 108em;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
     }
 
 
