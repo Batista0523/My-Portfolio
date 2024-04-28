@@ -126,19 +126,22 @@
         width: 110em;
 }
     .infoMe {
-        left: 68rem;
+        left: -7rem;
         height: fit-content;
         background-color: rgba(0, 0, 0, 0.64);
         box-shadow: 0 0.45em 0.5em 0 rgb(0, 0, 0);
         border: none;
         border-radius: 45px;
-        padding: 1.5rem;
-        max-width: 800px;
+        /* padding: 11.5rem; */
+        /* max-width: 800px; */
         z-index: center;
-        position: relative;
+        /* position: relative; */
         font-family: "Cormorant", serif;
         top: 13rem;
-        padding: -1rem;
+        padding: 0rem;
+        margin: -7em;
+        left: -8em;
+    
     }
 
     .home-container::before {
