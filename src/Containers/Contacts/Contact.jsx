@@ -39,7 +39,7 @@ function Contact() {
       alert("🚀 🎉 Message sent successfully 🥳✨🚀");
     } catch (error) {
       console.error("Error sending message:", error);
-      alert("Failed to send message. Please try again later.");
+      alert("Failed to send message. Please try again later.",error);
     }
   };
 

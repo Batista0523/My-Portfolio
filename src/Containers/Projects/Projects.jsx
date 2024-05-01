@@ -10,8 +10,8 @@ function Projects() {
     const fetchItem = async () => {
       try {
         const response = await getAllItems(endpoint);
-        setItems(response);
-        console.log(response,"---<")
+        console.log(response,'---<<')
+        setItems(response.data.payload);
       } catch (error) {
         console.error("Error fetching items", error);
       }

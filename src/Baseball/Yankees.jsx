@@ -65,24 +65,26 @@ function Yankees() {
   return (
     <div className="yankees-container">
       <h1>New York Yankees</h1>
-      {yankeesGames.map(([key, game]) => (
-        <div key={key}>
-          <p>
-            {" "}
-            {game.away} VS {game.home}
-          </p>
-          <p>Game Time {game.gameTime}</p>
-          <p>Away {game.away}</p>
-          <p>Home {game.home}</p>
-          <p>
-            Scores :{" "}
-            {game.lineScore
-              ? ` Away R:${game.lineScore.away.R} Home R: ${game.lineScore.home.R}  `
-              : "N/A"}
-          </p>
-          <p>Game Status {game.gameStatus}</p>
-        </div>
-      ))}
+      <div className="yankees-info">
+        {yankeesGames.map(([key, game]) => (
+          <div key={key}>
+            <p>
+              {" "}
+              {game.away} VS {game.home}
+            </p>
+            <p>Game Time {game.gameTime}</p>
+            <p>Away {game.away}</p>
+            <p>Home {game.home}</p>
+            <p>
+              Scores :{" "}
+              {game.lineScore
+                ? ` Away R:${game.lineScore.away.R} Home R: ${game.lineScore.home.R}  `
+                : "N/A"}
+            </p>
+            <p>Game Status {game.gameStatus}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }

@@ -3,12 +3,14 @@ import axios from "axios";
 const URL = import.meta.env.VITE_DEPLOYED || import.meta.env.VITE_BASE;
 
 const handleResponse = (response) => {
-  const { success, data } = response.data;
-  if (success && data && data.payload) {
-    return data.payload;
+  console.log("Response:---->hello", response);
+  const  data  = response.data;
+  console.log("Data:", data);
+  if ( data ) {
+    return data
   } else {
-    console.error("Unexpected response format:", response.data);
-    throw new Error("Unexpected response format");
+    console.error("Unexpected response format!!!:", response.data);
+    throw new Error("Unexpected response format ");
   }
 };
 

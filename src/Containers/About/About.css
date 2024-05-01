@@ -11,9 +11,11 @@
   background-size: cover;
   display: flex;
   flex-direction: row;
-  height: 205vh;
+  height: fit-content;  
 }
-
+.about-part-home::before{
+  height: 25vh;
+}
 
 .p-about-description {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
