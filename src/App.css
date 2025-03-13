@@ -1,4 +1,4 @@
-.app-main {
+/* .app-main {
     display: flex;
     background-image: url("../src/assets/nyc.png");
     background-attachment: fixed;
@@ -9,4 +9,18 @@
   flex-direction: column;
   }
   
-  
+   */
+
+   html, body {
+    display: flex;
+    background-image: url("../src/assets/nyc.png");
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    flex-direction: column;
+    overflow-x: hidden;  
+  }
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }

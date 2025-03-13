@@ -1,71 +1,86 @@
-.project-container {
-    position: relative;
+.projects-body {
+    margin: 4rem;
+    padding: 2rem;
+    background-color: rgb(235, 238, 238);
+    border-radius: 2rem;
+  }
   
+  .projects-title {
+    font-family: "Great Vibes", cursive;
+    color: rgb(8, 7, 7);
     text-align: center;
-}
-
-.projects-section-home {
-    height: 156vh;
-    background-image: url('/src/assets/projectBack.png');
-    background-attachment: fixed;
-    background-position: center right;
-    background-size: cover;
-}
-
-.projects-section-home::before {
-    content: "";
-    position: relative;
-    top: 0;
-    height: 110vh;
-    left: 0;
-    width: 100%;
-    height: 92%;
-    margin-bottom: 2em;
-}
-
-.title {
-    font-size: 2.75rem;
-    color: rgb(6, 6, 6);
-}
-
-.link {
-    text-decoration: none;
-    color: rgb(12, 11, 11);
-    padding: 15px;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+  
+  .projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  .project-card {
+    background-color: white;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-title {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 2rem;
-}
-
-.link:hover {
-    color: rgb(40, 158, 242);
-}
-
-.projects-card {
-    width: 30rem;
-    height: fit-content;
-    margin: 3rem;
-    background-color: rgb(235, 238, 238);
-    box-shadow: 0 0.25em 0.5em 0 rgba(20, 20, 20, 0.913);
-    font-size: 1.75rem;
-    padding: 3rem;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.projectContent {
-
-    padding: 2rem;
-    position: relative;
-  
-    margin: 5em;
-    border-radius: 3rem;
     color: rgb(8, 7, 7);
-    height: fit-content;
-
-}
-
-@media screen and (max-width: 768px) {
-    .projectContent {
-        padding: 2em;
-        margin: 3rem;
+  }
+  
+  .project-description {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    color: rgb(50, 50, 50);
+  }
+  
+  .project-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .project-link {
+    text-decoration: none;
+    color: rgb(30, 144, 255);
+    transition: color 0.3s;
+  }
+  
+  .project-link:hover {
+    color: rgb(0, 102, 204);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .projects-body {
+      margin: 2rem;
     }
-}
+  
+    .projects-title {
+      font-size: 2.5rem;
+    }
+  
+    .project-card {
+      padding: 1.5rem;
+    }
+  
+    .project-title {
+      font-size: 1.8rem;
+    }
+  
+    .project-description {
+      font-size: 1.1rem;
+    }
+  }
+  

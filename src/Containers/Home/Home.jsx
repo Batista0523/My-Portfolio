@@ -13,7 +13,7 @@ function Home() {
     <div className="app-main">
       <div className="home-container">
        
-        <div className="homeContent animate__animated animate__zoomIn animate__slower"> {/*  animate__animated animate__zoomIn animate__slower*/}
+        <div> {/*  animate__animated animate__zoomIn animate__slower*/}
           {/* <Weather /> */}
 
           {/* <img className="profilePic" src={images.profilePic} alt="" /> */}

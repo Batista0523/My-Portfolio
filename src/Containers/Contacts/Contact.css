@@ -3,8 +3,8 @@
     width: 80%;
     max-width: 900px;
     margin: 0 auto;
+    padding: 2rem;
 }
-
 
 .contact-section-home {
     position: relative;
@@ -15,6 +15,9 @@
     background-position: center;
     background-size: cover;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-section-home::before {
@@ -28,7 +31,6 @@
     z-index: 1;
 }
 
-
 .contact-form {
     position: relative;
     border-radius: 20px;
@@ -36,40 +38,24 @@
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding: 3em;
     max-width: 600px;
-    margin: 5em;
+    margin: 2em auto;
+    z-index: 2;
 }
 
-
-.input {
+.input, textarea {
     width: 100%;
     padding: 15px;
     margin: 10px 0;
     border: 2px solid #004080;
     border-radius: 10px;
     font-size: 16px;
-    transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.input:focus {
+.input:focus, textarea:focus {
     border-color: #ff6f61;
+    box-shadow: 0 0 8px rgba(255, 111, 97, 0.5);
 }
-
-
-textarea {
-    width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    border: 2px solid #004080;
-    border-radius: 10px;
-    font-size: 16px;
-    resize: none;
-    transition: border-color 0.3s ease;
-}
-
-textarea:focus {
-    border-color: #ff6f61;
-}
-
 
 .btn-submit {
     width: 100%;
@@ -80,22 +66,35 @@ textarea:focus {
     color: #fff;
     background-color: #004080;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s;
 }
 
 .btn-submit:hover {
     background-color: #ff6f61;
+    transform: translateY(-3px);
 }
-
 
 .contactContent {
     color: #fff;
     text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;
 }
-
-
 @media screen and (max-width: 768px) {
+    .contact-section-home {
+        background-attachment: scroll; /* Prevent fixed background issues on mobile */
+    }
+
     .contact-form {
-        padding: 30px;
+        padding: 2rem;
+        margin: 2em 1em;
+    }
+
+    .btn-submit {
+        font-size: 16px;
+    }
+
+    .contactContent {
+        font-size: 1rem;
     }
 }

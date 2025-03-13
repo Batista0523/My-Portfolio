@@ -1,68 +1,70 @@
+/* General Container Styling */
 .about-body {
   margin: 4rem;
-  height: 195vh;
-
+  min-height: 195vh;
+  position: relative;
 }
 
+/* Background Section */
 .about-part-home {
-  background-image: url("/src/assets/aboutback.png");
+  background-image: url('/src/assets/aboutback.png');
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   display: flex;
   flex-direction: row;
-  height: fit-content;  
-}
-.about-part-home::before{
-  height: 25vh;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  height: fit-content;
 }
 
+/* About Text Styling */
 .p-about-description {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 1rem;
   margin: 3rem;
   font-size: 2rem;
+  color: #080707;
 }
 
+/* About Container */
 .about-container {
   width: 100%;
-
+  text-align: center;
 }
 
-.section-title {
+/* Titles */
+.section-title, .title-about {
   color: rgb(8, 7, 7);
-  font-family: "Great Vibes";
+  font-family: 'Great Vibes', cursive;
   padding: 2rem;
 }
 
 .title-about {
-  color: rgb(8, 7, 7);
-  font-family: "Great Vibes";
-  padding: 2rem;
   font-size: 3.2em;
 }
 
+/* Skill Description */
 .skill-description {
   color: rgb(8, 7, 7);
   margin: auto;
-  min-height: fit-content;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.4em;
   padding: 10px;
-
 }
 
+/* Skill Container */
 .skill-container {
-  width: 60rem;
-  margin: 50px;
+  width: 55rem;
+  margin: 50px auto;
   font-size: 2.2em;
-  position: relative;
-  bottom: 33rem;
-  left: 30px;
   border-radius: 3rem;
   background-color: rgb(235, 238, 238);
+  padding: 2rem;
 }
 
+/* Skill Image Styling */
 .skill-pic {
   padding: 3px;
   width: 150px;
@@ -78,51 +80,40 @@
   cursor: pointer;
 }
 
+/* About Content Styling */
 .aboutContent {
-  width: 90%;
+  width: 80%;
   padding: 2rem;
   position: relative;
   text-align: center;
-  margin: 10px;
+  margin: 0 auto;
   border-radius: 3rem;
   color: rgb(8, 7, 7);
   background-color: rgb(235, 238, 238);
-  height: fit-content;
-  left: 5rem;
-  top: 10rem;
-
+  margin-top: 10rem;
 }
 
-
-
+/* Mobile Styling */
 @media screen and (max-width: 768px) {
-  .about-body {
-    margin: 2rem;
-    margin-bottom: 8rem;
-  }
-.about-part-home{
-  background-image: url('/porfolio-front-end/src/assets/aboutback.png');
-    background-attachment: fixed;
-    background-position: center;
+  
+  .about-part-home {
+    background-attachment: scroll; /* Ensure smooth scrolling on mobile */
+    background-image: url('/porfolio-front-end/src/assets/aboutback.png');
     background-size: cover;
-    display: flex;
-    flex-direction: row;
-    height: 350vh;
+    flex-direction: column;
 }
+  .about-body {
+      margin: 2rem;
+  }
+
   .skill-container {
-    width: 76rem;
-    margin: -20em;
-    font-size: 2.2em;
-    position: relative;
-    bottom: -15rem;
-    left: 23em;
-    border-radius: 3rem;
-    background-color: rgb(235, 238, 238);
-    height: fit-content;
+      width: 90%;
+      margin: 2rem auto;
+      padding: 1rem;
   }
 
   .aboutContent {
-    width: 72%;
-   top: 16rem;
+      width: 90%;
+      margin-top: 2rem;
   }
 }

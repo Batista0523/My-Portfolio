@@ -1,88 +1,97 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Great+Vibes&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Sacramento&family=Tangerine:wght@400;700&display=swap');
+
 .app_nav {
-    justify-content: space-between;
-    align-items: center;
-    height: fit-content;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    color: white;
-    background-size: cover;
-    background-repeat: no-repeat;
-    opacity: 3.9;
-}
-
-.nav-logo {
-    font-family: "Great Vibes", cursive;
-    font-size: 1.8rem;
-    font-weight: 400;
-    font-style: normal;
-    margin: 0;
-}
-
-.nav-container {
-    width: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.64);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 0.5rem 1.5rem;
     box-shadow: 0 0.45em 0.5em 0 rgb(0, 0, 0);
+    width: 100%;
+    box-sizing: border-box;
+  
+}
+
+/* Logo */
+.nav-logo {
+    font-family: "Great Vibes", cursive;
+    font-size: 2rem;
+    color: white;
+    margin: 0;
+}
+
+/* Container */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .nav-link {
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 0.5rem 1rem;
-    color: inherit;
+    color: white;
     font-family: "Tangerine", cursive;
     font-weight: 700;
-    font-style: normal;
+    transition: color 0.3s;
 }
 
-.nav-links {
-    display: flex;
-    align-items: center;
+.nav-link:hover {
+    color: #ff6f61;
 }
 
-.nav-links > * {
-    margin-left: 1rem;
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+    .nav-logo {
+        font-size: 1.8rem;
+    }
+
+    .nav-link {
+        font-size: 1.3rem;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
 }
 
-/* Media query for screens smaller than 768px */
+/* Mobile Styles */
 @media screen and (max-width: 768px) {
     .app_nav {
         flex-direction: column;
         align-items: flex-start;
-        padding: 0.5rem 1rem;
-        background-color: rgba(0, 0, 0, 0.9);
-        position: sticky;
+        padding: 1rem;
     }
 
     .nav-container {
-        width: 20%;
-        height: 4em;
-        display: flex;
-        justify-content: inherit;
-        padding: 2em;
-        margin: -2px
-    }
-
-    .nav-link {
-        font-size: 1rem;
-        padding: 0.4rem 0.8rem;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
     }
 
     .nav-links {
         flex-direction: column;
-        align-items: flex-start;
+        width: 100%;
+        gap: 0.5rem;
     }
 
-    .nav-links > * {
-        margin: -1.5rem 0;
-        height: 4em;
-    
+    .nav-link {
+        font-size: 1.2rem;
+        padding: 0.6rem 0;
+        width: 100%;
+        text-align: left;
     }
 }

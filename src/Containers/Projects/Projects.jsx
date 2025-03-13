@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-
+import "./Projects.css"
 function Projects() {
   const [projects, setProjects] = useState([]);
   const url = import.meta.env.VITE_BASE;
@@ -12,7 +12,7 @@ function Projects() {
         if (data.success) {
           setProjects(data.payload);
         } else {
-          console.error("Error fetchin data", data);
+          console.error("Error fetching data", data);
         }
       } catch (err) {
         console.error("Error fetching internal projects", err);
@@ -22,27 +22,21 @@ function Projects() {
   }, []);
 
   return (
-    <div>
-      <h1>Projects</h1>
-      {projects.map((project, index) => (
-        <div key={index}>
-          <h2>{project.title}</h2>
-          <br />
-          <p>{project.description}</p>
-          <br />
-          <a href={project.production_link} target="_blank">
-            Demo
-          </a>
-          <br />
-          <a href={project.github_repo_back} target="_blank">
-            Back end Repo
-          </a>
-          <br />
-          <a href={project.github_repo_front} target="_blank">
-            Front end Repo
-          </a>
-        </div>
-      ))}
+    <div className="projects-body">
+      <h1 className="projects-title">Projects</h1>
+      <div className="projects-container">
+        {projects.map((project, index) => (
+          <div className="project-card" key={index}>
+            <h2 className="project-title">{project.title}</h2>
+            <p className="project-description">{project.description}</p>
+            <div className="project-links">
+              <a href={project.production_link} target="_blank" className="project-link">Demo</a>
+              <a href={project.github_repo_back} target="_blank" className="project-link">Back end Repo</a>
+              <a href={project.github_repo_front} target="_blank" className="project-link">Front end Repo</a>
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
