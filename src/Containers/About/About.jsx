@@ -6,29 +6,12 @@ import { images } from "../../constants";
 import Time from "../../time/Time";
 
 function About() {
-  const resumeUrl = "/porfolio-front-end/resume/Elisaul-Batista-Full Stack Developer.pdf";
+  const resumeUrl = "/porfolio-front-end/src/resume/Resume 2025.pdf.svg";
 
   return (
     <div className="about-body">
       <div className="about-container">
-        <div className="aboutContent">
-          <h1 className="title-about">Who am I</h1>
-          <p className="p-about-description">
-            👋 Hello! I'm a versatile Full Stack Developer based in vibrant New
-            York City. Fluent in Spanish and English, I blend creativity with
-            technical prowess to craft exceptional digital experiences. 🚀
-            Specializing in web development, I create captivating user
-            interfaces and optimize backend operations to drive performance and
-            elevate user satisfaction. 💡 Let's collaborate to create innovative
-            solutions that inspire and transform. Together, we'll navigate the
-            ever-evolving landscape of technology to shape the future.
-          </p>
-          <a target="_blank" className="resumeDownload" href='/porfolio-front-end/resume/Elisaul-Batista-Full Stack Developer.pdf'>
-            {" "}
-            Resume
-          </a>
-        </div>
-        <Time />
+   
         <div className="aboutContent2 ">
           <div className="skill-container">
             <h1 className="section-title">Technical Skills and Tools</h1>
@@ -82,4 +65,4 @@ function About() {
 }
 
 export default About;
-About.js;
+

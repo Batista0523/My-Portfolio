@@ -1,41 +1,48 @@
-import React, { useEffect, useState } from "react";
-import "./Projects.css";
-import { getAllItems } from "../../helpers/apiCalls";
+import React, { useState, useEffect } from "react";
 
 function Projects() {
-  const [items, setItems] = useState([]);
-  const endpoint = "project";
+  const [projects, setProjects] = useState([]);
+  const url = import.meta.env.VITE_BASE;
 
   useEffect(() => {
-    const fetchItem = async () => {
+    const fetchaData = async () => {
       try {
-        const response = await getAllItems(endpoint);
-        console.log(response,'---<<')
-        setItems(response.data.payload);
-      } catch (error) {
-        console.error("Error fetching items", error);
+        const response = await fetch(`${url}/Projects`);
+        const data = await response.json();
+        if (data.success) {
+          setProjects(data.payload);
+        } else {
+          console.error("Error fetchin data", data);
+        }
+      } catch (err) {
+        console.error("Error fetching internal projects", err);
       }
     };
-    fetchItem();
-  }, []); 
+    fetchaData();
+  }, []);
 
   return (
     <div>
-      <div className="project-container">
-        <div className="projectContent">
-          <h1 className="title">Projects</h1>
-          <div className="projects-card">
-            {items.map((item,) => (
-              <div className="projects-api" key={item.id}>
-                <h1>{item.title}</h1>
-                <p>{item.descriptions}</p>
-                <a className="link" href={item.deployedlink} target="_blank">Demo</a>
-                <a className="link" href={item.repolink} target="_blank">Github</a>
-              </div>
-            ))}
-          </div>
+      <h1>Projects</h1>
+      {projects.map((project, index) => (
+        <div key={index}>
+          <h2>{project.title}</h2>
+          <br />
+          <p>{project.description}</p>
+          <br />
+          <a href={project.production_link} target="_blank">
+            Demo
+          </a>
+          <br />
+          <a href={project.github_repo_back} target="_blank">
+            Back end Repo
+          </a>
+          <br />
+          <a href={project.github_repo_front} target="_blank">
+            Front end Repo
+          </a>
         </div>
-      </div>
+      ))}
     </div>
   );
 }

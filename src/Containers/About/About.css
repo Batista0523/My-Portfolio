@@ -101,7 +101,7 @@
     margin-bottom: 8rem;
   }
 .about-part-home{
-  background-image: url(/src/assets/aboutback.png);
+  background-image: url('/porfolio-front-end/src/assets/aboutback.png');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;

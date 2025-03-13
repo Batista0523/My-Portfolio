@@ -78,6 +78,7 @@ function Contact() {
 
               <input className="btn-submit" type="submit" value="Send" />
             </form>
+            
           </div>
         </div>
       </div>

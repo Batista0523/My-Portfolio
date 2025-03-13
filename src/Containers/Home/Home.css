@@ -39,7 +39,7 @@
     border: none;
     border-radius: 45px;
     padding: 1.5rem;
-    max-width: 800px;
+    max-width: 500px;
     z-index: center;
     position: relative;
     font-family: "Cormorant", serif;
@@ -145,7 +145,7 @@
     }
 
     .home-container::before {
-        background-image: url(/src/assets/back1.png);
+        background-image: url('/porfolio-front-end/src/assets/back1.png');
         background-attachment: scroll;
         background-position: center;
         background-repeat: no-repeat;
