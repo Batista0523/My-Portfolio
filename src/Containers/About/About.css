@@ -9,9 +9,11 @@
   color: #333;
 }
 
+/* Container */
 .about-container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 /* Hero Section */
@@ -67,6 +69,7 @@
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
 }
 
 .section-title {
@@ -82,21 +85,25 @@
   color: #555;
 }
 
+/* Skill Container */
 .skill-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
-/* Container for each skill item */
+/* Individual Skill Item */
 .skill-item {
-  display: inline-block;
-  width: 80px; /* Increased a bit for clarity */
+  position: relative;
+  width: 100px;
   text-align: center;
   cursor: pointer;
-  margin: 0.5rem;
   transition: transform 0.3s ease;
+}
+
+.skill-item:hover {
+  transform: scale(1.05);
 }
 
 /* The image styling */
@@ -106,35 +113,42 @@
   transition: transform 0.3s ease;
 }
 
-/* On hover, scale the image */
-.skill-item:hover .skill-pic {
-  transform: scale(1.3);
-}
-
-/* Skill info block (hidden by default) */
+/* Skill Info Block */
 .skill-info {
-  display: none;
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.8);
   color: #fff;
-  position: absolute;
-  font-size: 0.8rem;
-  padding: 0.3rem 0.5rem;
+  padding: 0.4rem 0.6rem;
   border-radius: 5px;
-  margin-top: 0.5rem;
-  line-height: 1.3;
-  width: 8rem;
+  width: 180px;
+  text-align: left;
+  line-height: 1.4;
+  display: none;
+  font-size: 0.9rem;
 }
 
-/* When hovering the skill item, display the info below the image */
+/* Show Info on Hover */
 .skill-item:hover .skill-info {
   display: block;
 }
 
-
 /* Responsive Styles */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .about-title {
     font-size: 2.5rem;
+  }
+  
+  .section-title {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-title {
+    font-size: 2rem;
   }
   
   .about-description {
@@ -142,18 +156,30 @@
   }
   
   .section-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   
-  .skill-description {
-    font-size: 1rem;
-  }
-  .skill-info{
-    position:absolute;
-    width: 5.5rem;
-  }
   .skill-item {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+  }
+  
+  .skill-info {
+    width: 150px;
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-description {
+    font-size: 0.9rem;
+  }
+
+  .skill-item {
+    width: 70px;
+  }
+  
+  .skill-info {
+    width: 130px;
+    font-size: 0.75rem;
   }
 }
