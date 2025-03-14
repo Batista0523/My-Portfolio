@@ -3,7 +3,7 @@ import "./About.css";
 import "animate.css";
 
 import { images } from "../../constants";
-import Time from "../../time/Time";
+
 
 function About() {
   const resumeUrl = "/porfolio-front-end/src/resume/Resume_2025.pdf";
