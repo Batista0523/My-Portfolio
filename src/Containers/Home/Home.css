@@ -1,116 +1,153 @@
 /* Home Section */
 .home-container {
-    position: relative; /* For ::before to work */
-    text-align: center;
-    z-index: 1;
-    width: 100%;
-    min-height: 100vh;     /* Ensure container fills at least one viewport */
-    display: flex;         /* Use flexbox for vertical centering */
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin-bottom: 5rem;   /* Separation from the next section */
+  position: relative;
+  text-align: center;
+  z-index: 1;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 5rem;
+}
+
+/* Background Image Styling */
+.home-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/src/assets/back1.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  opacity: 1;
+  z-index: -1;
+}
+
+/* Centering the Info Box */
+.infoMe {
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.64);
+  box-shadow: 0 0.45em 0.5em 0 rgb(0, 0, 0);
+  border: none;
+  border-radius: 45px;
+  padding: 1rem;
+  width: 100%;
+  max-width: 500px;
+  font-family: "Cormorant", serif;
+}
+
+/* Name Styling */
+.infoMeName {
+  font-size: 1.75em;
+  padding: 0.35em 1em;
+  position: relative;
+  color: white;
+}
+
+.infoMeName::before,
+.infoMeName::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+.infoMeName::before {
+  top: 0;
+}
+
+.infoMeName::after {
+  bottom: 0;
+}
+
+/* Title & Download Button */
+.infoMeTitle,
+.resumeDownload {
+  margin: 10px;
+  padding: 12px;
+  color: rgb(249, 245, 245);
+  background-color: rgba(45, 40, 40, 0.451);
+  border-radius: 15px;
+  text-align: center;
+  font-family: "Cormorant", serif;
+  font-size: 1.75rem;
+}
+
+.resumeDownload:hover {
+  background-color: rgba(8, 164, 86, 0.586);
+}
+
+.resumeDownload {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Description */
+.p-description {
+  font-size: 1.75rem;
+  color: white;
+  padding: 5px;
+  margin: 5px;
+}
+
+/* Mobile Styling */
+@media screen and (max-width: 768px) {
+  .home-container {
+      width: 100%;
+      min-height: 100vh;
   }
-  
-  .home-container::before {
-    content: "";
-    position: absolute;
-    top: 0;              /* Standard positioning */
-    left: 0;
-    width: 100%;
-    height: 100vh;       /* Use full viewport height */
-    background-image: url('/src/assets/back1.png');
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-    opacity: 1;
-    z-index: -1;         /* Keeps background behind content */
-  }
-  
-  /* Centering the Info Box */
+
   .infoMe {
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.64);
-    box-shadow: 0 0.45em 0.5em 0 rgb(0, 0, 0);
-    border: none;
-    border-radius: 45px;
-    padding: 1rem;
-    width: 100%;
-    max-width: 500px;    /* Limit width */
-    font-family: "Cormorant", serif;
+      max-width: 90vw;
   }
-  
-  /* Name Styling */
+
+  .home-container::before {
+      background-attachment: scroll; /* Fix for mobile */
+      background-size: contain;
+      background-image: none; /* Ensure full image is visible */
+  }
+
   .infoMeName {
-    font-size: 1.75em;
-    padding: 0.35em 1em;
-    position: relative;
-    color: white;
+      font-size: 1.5em;
   }
-  
-  .infoMeName::before,
-  .infoMeName::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 2px;
-    background-color: white;
-  }
-  
-  .infoMeName::before {
-    top: 0;
-  }
-  
-  .infoMeName::after {
-    bottom: 0;
-  }
-  
-  /* Title & Download Button */
+
   .infoMeTitle,
   .resumeDownload {
-    margin: 10px;
-    padding: 12px;
-    color: rgb(249, 245, 245);
-    background-color: rgba(45, 40, 40, 0.451);
-    border-radius: 15px;
-    text-align: center;
-    font-family: "Cormorant", serif;
-    font-size: 1.75rem;
+      font-size: 1.4rem;
   }
-  
-  .resumeDownload:hover {
-    background-color: rgba(8, 164, 86, 0.586);
-  }
-  
-  .resumeDownload {
-    cursor: pointer;
-    text-decoration: none;
-  }
-  
-  /* Description */
+
   .p-description {
-    font-size: 1.75rem;
-    color: white;
-    padding: 5px;
-    margin: 5px;
+      font-size: 1.2rem;
   }
-  
-  /* Mobile Styling */
-  @media screen and (max-width: 768px) {
-    .home-container {
-      width: 100%;  /* Use 100% to avoid horizontal overflow */
-      min-height: 100vh;
-    }
-    
-    .infoMe {
-      max-width: 90vw;  /* Use relative width on mobile */
-    }
-    
-    .home-container::before {
-      background-image: url('/porfolio-front-end/src/assets/back1.png');
-      background-attachment: scroll; /* Fix issues with fixed backgrounds on mobile */
-      background-repeat: no-repeat;
+}
+
+/* Extra Small Devices (Phones in vertical position) */
+@media screen and (max-width: 480px) {
+  .home-container::before {
       background-size: cover;
-    }
   }
+
+  .infoMe {
+      padding: 0.75rem;
+  }
+
+  .infoMeName {
+      font-size: 1.3em;
+  }
+
+  .infoMeTitle,
+  .resumeDownload {
+      font-size: 1.2rem;
+  }
+
+  .p-description {
+      font-size: 1rem;
+  }
+}
