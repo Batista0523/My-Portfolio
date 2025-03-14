@@ -1,31 +1,30 @@
 /* Home Section */
 .home-container {
-  position: relative;
+  position: relative; /* For ::before to work */
   text-align: center;
   z-index: 1;
   width: 100%;
-  min-height: 100vh;
-  display: flex;
+  min-height: 100vh;     /* Ensure container fills at least one viewport */
+  display: flex;         /* Use flexbox for vertical centering */
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin-bottom: 5rem;
+  margin-bottom: 5rem;   /* Separation from the next section */
 }
 
-/* Background Image Styling */
 .home-container::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 0;              /* Standard positioning */
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;       /* Use full viewport height */
   background-image: url('/src/assets/back1.png');
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   opacity: 1;
-  z-index: -1;
+  z-index: -1;         /* Keeps background behind content */
 }
 
 /* Centering the Info Box */
@@ -37,7 +36,7 @@
   border-radius: 45px;
   padding: 1rem;
   width: 100%;
-  max-width: 500px;
+  max-width: 500px;    /* Limit width */
   font-family: "Cormorant", serif;
 }
 
@@ -100,54 +99,18 @@
 /* Mobile Styling */
 @media screen and (max-width: 768px) {
   .home-container {
-      width: 100%;
-      min-height: 100vh;
+    width: 100%;  /* Use 100% to avoid horizontal overflow */
+    min-height: 100vh;
   }
-
+  
   .infoMe {
-      max-width: 90vw;
+    max-width: 90vw;  /* Use relative width on mobile */
   }
-
+  
   .home-container::before {
-      background-attachment: scroll; /* Fix for mobile */
-      background-size: contain;
-      background-image: none; /* Ensure full image is visible */
-  }
-
-  .infoMeName {
-      font-size: 1.5em;
-  }
-
-  .infoMeTitle,
-  .resumeDownload {
-      font-size: 1.4rem;
-  }
-
-  .p-description {
-      font-size: 1.2rem;
-  }
-}
-
-/* Extra Small Devices (Phones in vertical position) */
-@media screen and (max-width: 480px) {
-  .home-container::before {
-      background-size: cover;
-  }
-
-  .infoMe {
-      padding: 0.75rem;
-  }
-
-  .infoMeName {
-      font-size: 1.3em;
-  }
-
-  .infoMeTitle,
-  .resumeDownload {
-      font-size: 1.2rem;
-  }
-
-  .p-description {
-      font-size: 1rem;
+    background-image: url('/porfolio-front-end/src/assets/back1.png');
+    background-attachment: scroll; /* Fix issues with fixed backgrounds on mobile */
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
