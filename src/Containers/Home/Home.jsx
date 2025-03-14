@@ -1,12 +1,9 @@
-import React, { useState } from "react";
+
 import "./Home.css";
 import About from "../About/About";
 import Contact from "../Contacts/Contact";
 import Projects from "../Projects/Projects";
-import { images } from "../../constants";
-// import "animate.css";
-import Weather from "../weather/Weather";
-import Yankees from "../../Components/Baseball/Yankees";
+
 
 function Home() {
   return (

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import { addItem } from "../../helpers/apiCalls";
 import "./Contact.css";
 
