@@ -6,7 +6,7 @@ import { images } from "../../constants";
 
 
 function About() {
-  const resumeUrl = "/porfolio-front-end/src/resume/Resume_2025.pdf";
+
 
   return (
     <div className="about-body">
