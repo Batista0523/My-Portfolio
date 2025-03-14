@@ -1,7 +1,50 @@
 import "./About.css";
 import "animate.css";
-
 import { images } from "../../constants";
+const skills = [
+  {
+    src: images.htmlSkill,
+    name: "HTML",
+    description:
+      "The foundational markup language that structures web content and defines its semantics.",
+  },
+  {
+    src: images.cssSkill,
+    name: "CSS",
+    description:
+      "The styling language that transforms plain HTML into visually appealing, responsive designs.",
+  },
+  {
+    src: images.javaScriptSkill,
+    name: "JavaScript",
+    description:
+      "A dynamic programming language essential for interactive and feature-rich web applications.",
+  },
+  {
+    src: images.reactSkill,
+    name: "React",
+    description:
+      "A leading JavaScript library for building responsive, component-based user interfaces.",
+  },
+  {
+    src: images.postgreSqlSkill,
+    name: "PostgreSQL",
+    description:
+      "A robust, open-source relational database system known for its reliability and scalability.",
+  },
+  {
+    src: images.nodeSkill,
+    name: "Node.js",
+    description:
+      "A powerful JavaScript runtime that enables scalable server-side applications.",
+  },
+  {
+    src: images.githubSkill,
+    name: "GitHub",
+    description:
+      "A collaborative platform for version control and code management using Git.",
+  },
+];
 
 function About() {
   return (
@@ -38,33 +81,15 @@ function About() {
             robust, creative solutions.
           </p>
           <div className="skill-container">
-            <img className="skill-pic" src={images.htmlSkill} alt="HTML" />
-            <img className="skill-pic" src={images.cssSkill} alt="CSS" />
-            <img
-              className="skill-pic"
-              src={images.javaScriptSkill}
-              alt="JavaScript"
-            />
-            <img className="skill-pic" src={images.reactSkill} alt="React" />
-            <img
-              className="skill-pic"
-              src={images.postgreSqlSkill}
-              alt="PostgreSQL"
-            />
-            <img className="skill-pic" src={images.nodeSkill} alt="Node.js" />
-            <img className="skill-pic" src={images.sassSkill} alt="Sass" />
-            <img
-              className="skill-pic"
-              src={images.expressSkill}
-              alt="Express.js"
-            />
-            <img
-              className="skill-pic"
-              src={images.bootstratSkill}
-              alt="Bootstrap"
-            />
-            <img className="skill-pic" src={images.githubSkill} alt="GitHub" />
-            <img className="skill-pic" src={images.canvaSkill} alt="Canva" />
+            {skills.map((skill, index) => (
+              <div className="skill-item" key={index}>
+                <img className="skill-pic" src={skill.src} alt={skill.name} />
+                <div className="skill-info">
+                  <h3>{skill.name}</h3>
+                  <p>{skill.description}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </section>
       </div>
