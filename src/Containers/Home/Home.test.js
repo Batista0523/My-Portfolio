@@ -1,7 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';  
 import Home from './Home';
-
 
 // Mocking child components to isolate testing of Home
 jest.mock('../About/About', () => () => <div>About Component</div>);
