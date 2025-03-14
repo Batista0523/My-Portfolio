@@ -100,4 +100,11 @@
     .contactContent {
       font-size: 1rem;
     }
+    .contact-container{
+        position: relative;
+        width: 95%;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0rem;
+    }
   }
