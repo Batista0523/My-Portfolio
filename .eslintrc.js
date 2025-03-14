@@ -22,4 +22,5 @@ module.exports = {
       'react/display-name': 'off',  
       'no-unused-vars': ['warn', { 'argsIgnorePattern': '^_' }]
     }
+    
   };
