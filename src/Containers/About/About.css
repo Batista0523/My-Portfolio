@@ -128,10 +128,7 @@
 /* When hovering the skill item, display the info below the image */
 .skill-item:hover .skill-info {
   display: block;
-    position: relative;
-    width: 10rem;
-    right: 3rem;
-
+  position: absolute;
 }
 
 
@@ -147,6 +144,12 @@
   
   .section-title {
     font-size: 2rem;
+  }
+  .skill-item:hover .skill-info {
+    display: block;
+    position: relative;
+    width: 8rem;
+    right: 3rem;
   }
   
   .skill-description {
