@@ -1,88 +1,74 @@
-/* Main container - Ensuring styles are scoped */
+/* Home Section */
 .home-container {
-    position: relative; /* Necessary for ::before to work */
+    position: relative; /* For ::before to work */
     text-align: center;
     z-index: 1;
-}
-
-/* Background image */
-.home-container::before {
+    width: 100%;
+    min-height: 100vh;     /* Ensure container fills at least one viewport */
+    display: flex;         /* Use flexbox for vertical centering */
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 5rem;   /* Separation from the next section */
+  }
+  
+  .home-container::before {
     content: "";
     position: absolute;
-    inset-block-start: 0;
-    inset-inline-start: 0;
-    inline-size: 100%;
-    block-size: 105vh;
-    height: 90vh;
+    top: 0;              /* Standard positioning */
+    left: 0;
+    width: 100%;
+    height: 100vh;       /* Use full viewport height */
     background-image: url('/src/assets/back1.png');
     background-attachment: fixed;
-    background-position: center;
+    background-position: center center;
     background-size: cover;
     opacity: 1;
+    z-index: -1;         /* Keeps background behind content */
+  }
   
-    z-index: -1; /* Keeps background behind content */
-}
-
-/* Home Content */
-.homeContent {
-    padding: 60px;
-    text-align: center;
-    color: white;
-    margin: 10px auto;
-    margin-top: 15rem;
-}
-
-/* Centering .infoMe */
-.infoMe {
-    margin: 0 auto; /* Horizontally centers the element */
+  /* Centering the Info Box */
+  .infoMe {
+    margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.64);
     box-shadow: 0 0.45em 0.5em 0 rgb(0, 0, 0);
     border: none;
-    position: relative;
-   top: 10rem;
     border-radius: 45px;
-    padding: 1.5rem;
-    max-width: 500px;
+    padding: 1rem;
+    width: 100%;
+    max-width: 500px;    /* Limit width */
     font-family: "Cormorant", serif;
-}
-
-/* Profile Pic */
-.profilePic {
-    width: 200px;
-    border-radius: 50%;
-    margin-bottom: 1rem;
-}
-
-/* Name Styling */
-.infoMeName {
+  }
+  
+  /* Name Styling */
+  .infoMeName {
     font-size: 1.75em;
-    opacity: 1;
     padding: 0.35em 1em;
     position: relative;
-}
-
-/* Name Lines */
-.infoMeName::before,
-.infoMeName::after {
+    color: white;
+  }
+  
+  .infoMeName::before,
+  .infoMeName::after {
     content: "";
     position: absolute;
     left: 0;
     width: 100%;
     height: 2px;
     background-color: white;
-}
-
-.infoMeName::before {
+  }
+  
+  .infoMeName::before {
     top: 0;
-}
-
-.infoMeName::after {
+  }
+  
+  .infoMeName::after {
     bottom: 0;
-}
-
-/* Title & Download Button */
-.infoMeTitle,
-.resumeDownload {
+  }
+  
+  /* Title & Download Button */
+  .infoMeTitle,
+  .resumeDownload {
     margin: 10px;
     padding: 12px;
     color: rgb(249, 245, 245);
@@ -91,51 +77,40 @@
     text-align: center;
     font-family: "Cormorant", serif;
     font-size: 1.75rem;
-}
-
-/* Hover Effect */
-.resumeDownload:hover {
+  }
+  
+  .resumeDownload:hover {
     background-color: rgba(8, 164, 86, 0.586);
-}
-
-/* Clickable Button */
-.resumeDownload {
+  }
+  
+  .resumeDownload {
     cursor: pointer;
     text-decoration: none;
-}
-
-/* Description */
-.p-description {
+  }
+  
+  /* Description */
+  .p-description {
     font-size: 1.75rem;
     color: white;
     padding: 5px;
     margin: 5px;
-}
-
-/* Mobile Styling */
-@media screen and (max-width: 768px) {
-    .homeContent {
-        margin: 3rem;
-        width: 30rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
+  }
+  
+  /* Mobile Styling */
+  @media screen and (max-width: 768px) {
     .home-container {
-        width: 100vw;
+      width: 100%;  /* Use 100% to avoid horizontal overflow */
+      min-height: 100vh;
     }
-
+    
     .infoMe {
-        margin-top: 2rem;
-        padding: 1rem;
-        max-width: 90vw;
+      max-width: 90vw;  /* Use relative width on mobile */
     }
-
+    
     .home-container::before {
-        background-image: url('/porfolio-front-end/src/assets/back1.png');
-        background-attachment: scroll;
-        background-repeat: no-repeat;
-        background-size: cover;
+      background-image: url('/porfolio-front-end/src/assets/back1.png');
+      background-attachment: scroll; /* Fix issues with fixed backgrounds on mobile */
+      background-repeat: no-repeat;
+      background-size: cover;
     }
-}
+  }

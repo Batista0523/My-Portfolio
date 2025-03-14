@@ -1,42 +1,31 @@
-/* General Container Styling */
+/* About Section */
 .about-body {
-  margin: 4rem;
-  min-height: 195vh;
+  margin: 4rem auto;
+  /* Adjust or remove min-height if it causes excessive spacing */
   position: relative;
 }
 
-/* Background Section */
 .about-part-home {
   background-image: url('/src/assets/aboutback.png');
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   background-size: cover;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  height: fit-content;
+  /* Height is determined by content */
 }
 
-/* About Text Styling */
-.p-about-description {
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding: 1rem;
-  margin: 3rem;
-  font-size: 2rem;
-  color: #080707;
-}
-
-/* About Container */
 .about-container {
   width: 100%;
   text-align: center;
 }
 
-/* Titles */
-.section-title, .title-about {
-  color: rgb(8, 7, 7);
+.section-title,
+.title-about {
+  color: #080707;
   font-family: 'Great Vibes', cursive;
   padding: 2rem;
 }
@@ -45,16 +34,14 @@
   font-size: 3.2em;
 }
 
-/* Skill Description */
 .skill-description {
-  color: rgb(8, 7, 7);
+  color: #080707;
   margin: auto;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.4em;
   padding: 10px;
 }
 
-/* Skill Container */
 .skill-container {
   width: 55rem;
   margin: 50px auto;
@@ -64,23 +51,6 @@
   padding: 2rem;
 }
 
-/* Skill Image Styling */
-.skill-pic {
-  padding: 3px;
-  width: 150px;
-  border-radius: 3rem;
-  margin: 35px;
-  transition: transform 0.5s ease-in-out;
-  opacity: 0.9;
-  filter: brightness(100%) saturate(70%);
-}
-
-.skill-pic:hover {
-  transform: scale(1.6);
-  cursor: pointer;
-}
-
-/* About Content Styling */
 .aboutContent {
   width: 80%;
   padding: 2rem;
@@ -88,30 +58,30 @@
   text-align: center;
   margin: 0 auto;
   border-radius: 3rem;
-  color: rgb(8, 7, 7);
+  color: #080707;
   background-color: rgb(235, 238, 238);
-  margin-top: 10rem;
+  margin-top: 10rem;  /* Creates separation from preceding content */
 }
 
-/* Mobile Styling */
+/* About Mobile Styling */
 @media screen and (max-width: 768px) {
-  
   .about-part-home {
-    background-attachment: scroll; /* Ensure smooth scrolling on mobile */
-    background-image: url('/porfolio-front-end/src/assets/aboutback.png');
-    background-size: cover;
-    flex-direction: column;
-}
-  .about-body {
-      margin: 2rem;
+      background-attachment: scroll;
+      background-image: url('/porfolio-front-end/src/assets/aboutback.png');
+      background-size: cover;
+      flex-direction: column;
   }
-
+  
+  .about-body {
+      margin: 2rem auto;
+  }
+  
   .skill-container {
       width: 90%;
       margin: 2rem auto;
       padding: 1rem;
   }
-
+  
   .aboutContent {
       width: 90%;
       margin-top: 2rem;

@@ -13,10 +13,8 @@ function Home() {
     <div className="app-main">
       <div className="home-container">
        
-        <div> {/*  animate__animated animate__zoomIn animate__slower*/}
-          {/* <Weather /> */}
-
-          {/* <img className="profilePic" src={images.profilePic} alt="" /> */}
+        <div className="animate__animated animate__zoomIn animate__slower"> 
+         
           <div className="infoMe">
             <h1 className="infoMeName">Elisaul Batista</h1>
             <p className="p-description">
@@ -25,7 +23,7 @@ function Home() {
             </p>
             <h1 className="infoMeTitle">Software Engineer</h1>
           </div>
-        {/* <Yankees /> */}
+   
         
         </div>
       </div>
