@@ -1,89 +1,123 @@
-/* About Section */
+/* Global Base for About Page */
 .about-body {
-  margin: 4rem auto;
-  /* Adjust or remove min-height if it causes excessive spacing */
-  position: relative;
-}
-
-.about-part-home {
   background-image: url('/src/assets/aboutback.png');
-  background-attachment: fixed;
-  background-position: center center;
+  background-attachment: fixed; /* Fix issues with fixed backgrounds on mobile */
+  background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-  /* Height is determined by content */
+  padding: 4rem 1rem;
+  font-family: Arial, sans-serif;
+  color: #333;
 }
 
 .about-container {
-  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Hero Section */
+.about-hero {
   text-align: center;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
 }
 
-.section-title,
-.title-about {
-  color: #080707;
-  font-family: 'Great Vibes', cursive;
-  padding: 2rem;
+.about-title {
+  font-family: "Great Vibes", cursive;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #222;
 }
 
-.title-about {
-  font-size: 3.2em;
+.about-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  color: #555;
+}
+
+.about-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.resume-button {
+  background-color: #004080;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button:hover {
+  background-color: #ff6f61;
+}
+
+/* Skills Section */
+.skills-section {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-family: "Great Vibes", cursive;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #222;
 }
 
 .skill-description {
-  color: #080707;
-  margin: auto;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  font-size: 1.4em;
-  padding: 10px;
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #555;
 }
 
 .skill-container {
-  width: 55rem;
-  margin: 50px auto;
-  font-size: 2.2em;
-  border-radius: 3rem;
-  background-color: rgb(235, 238, 238);
-  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
 }
 
-.aboutContent {
-  width: 80%;
-  padding: 2rem;
-  position: relative;
-  text-align: center;
-  margin: 0 auto;
-  border-radius: 3rem;
-  color: #080707;
-  background-color: rgb(235, 238, 238);
-  margin-top: 10rem;  /* Creates separation from preceding content */
+.skill-pic {
+  width: 60px;
+  height: auto;
+  transition: transform 0.3s ease;
 }
 
-/* About Mobile Styling */
+.skill-pic:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Styles */
 @media screen and (max-width: 768px) {
-  .about-part-home {
-      background-attachment: scroll;
-      background-image: url('/porfolio-front-end/src/assets/aboutback.png');
-      background-size: cover;
-      flex-direction: column;
+  .about-title {
+    font-size: 2.5rem;
   }
   
-  .about-body {
-      margin: 2rem auto;
+  .about-description {
+    font-size: 1rem;
   }
   
-  .skill-container {
-      width: 90%;
-      margin: 2rem auto;
-      padding: 1rem;
+  .section-title {
+    font-size: 2rem;
   }
   
-  .aboutContent {
-      width: 90%;
-      margin-top: 2rem;
+  .skill-description {
+    font-size: 1rem;
+  }
+  
+  .skill-pic {
+    width: 50px;
   }
 }

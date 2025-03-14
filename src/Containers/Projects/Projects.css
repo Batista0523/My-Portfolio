@@ -1,86 +1,107 @@
 .projects-body {
-    margin: 4rem;
-    padding: 2rem;
-    background-color: rgb(235, 238, 238);
-    border-radius: 2rem;
+  margin: 4rem;
+  padding: 2rem;
+  background-color: rgb(235, 238, 238);
+  border-radius: 2rem;
+}
+
+.projects-title {
+  font-family: "Great Vibes", cursive;
+  color: rgb(8, 7, 7);
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+/* Search Bar */
+.projects-search {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem 1rem;
+  border: 2px solid #004080;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.search-input:focus {
+  border-color: #ff6f61;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.project-title {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 2rem;
+  color: rgb(8, 7, 7);
+}
+
+.project-description {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: rgb(50, 50, 50);
+}
+
+.project-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.project-link {
+  text-decoration: none;
+  color: rgb(30, 144, 255);
+  transition: color 0.3s;
+}
+
+.project-link:hover {
+  color: rgb(0, 102, 204);
+}
+
+@media screen and (max-width: 768px) {
+  .projects-body {
+    margin: 2rem;
   }
-  
+
   .projects-title {
-    font-family: "Great Vibes", cursive;
-    color: rgb(8, 7, 7);
-    text-align: center;
-    font-size: 3rem;
-    margin-bottom: 2rem;
+    font-size: 2.5rem;
   }
-  
-  .projects-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-  }
-  
+
   .project-card {
-    background-color: white;
-    border-radius: 1.5rem;
-    padding: 2rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
+    padding: 1.5rem;
   }
-  
-  .project-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  }
-  
+
   .project-title {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 2rem;
-    color: rgb(8, 7, 7);
+    font-size: 1.8rem;
   }
-  
+
   .project-description {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-    font-size: 1.2rem;
-    color: rgb(50, 50, 50);
+    font-size: 1.1rem;
   }
-  
-  .project-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  
-  .project-link {
-    text-decoration: none;
-    color: rgb(30, 144, 255);
-    transition: color 0.3s;
-  }
-  
-  .project-link:hover {
-    color: rgb(0, 102, 204);
-  }
-  
-  @media screen and (max-width: 768px) {
-    .projects-body {
-      margin: 2rem;
-    }
-  
-    .projects-title {
-      font-size: 2.5rem;
-    }
-  
-    .project-card {
-      padding: 1.5rem;
-    }
-  
-    .project-title {
-      font-size: 1.8rem;
-    }
-  
-    .project-description {
-      font-size: 1.1rem;
-    }
-  }
-  
+}

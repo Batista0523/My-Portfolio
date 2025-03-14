@@ -4,9 +4,9 @@
     max-width: 900px;
     margin: 0 auto;
     padding: 2rem;
-}
-
-.contact-section-home {
+  }
+  
+  .contact-section-home {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -18,20 +18,20 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.contact-section-home::before {
+  }
+  
+  .contact-section-home::before {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
     height: 20%;
-    background: linear-gradient(to bottom, rgba(240, 51, 51, 0.5), rgba(43, 32, 164, 0.8));
-    z-index: 1;
-}
 
-.contact-form {
+    z-index: 1;
+  }
+  
+  .contact-form {
     position: relative;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.9);
@@ -40,9 +40,10 @@
     max-width: 600px;
     margin: 2em auto;
     z-index: 2;
-}
-
-.input, textarea {
+  }
+  
+  .input,
+  textarea {
     width: 100%;
     padding: 15px;
     margin: 10px 0;
@@ -50,14 +51,15 @@
     border-radius: 10px;
     font-size: 16px;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.input:focus, textarea:focus {
-    border-color: #ff6f61;
+  }
+  
+  .input:focus,
+  textarea:focus {
+    border-color: #f414006e;
     box-shadow: 0 0 8px rgba(255, 111, 97, 0.5);
-}
-
-.btn-submit {
+  }
+  
+  .btn-submit {
     width: 100%;
     padding: 15px;
     border: none;
@@ -67,34 +69,35 @@
     background-color: #004080;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s;
-}
-
-.btn-submit:hover {
+  }
+  
+  .btn-submit:hover {
     background-color: #ff6f61;
     transform: translateY(-3px);
-}
-
-.contactContent {
+  }
+  
+  .contactContent {
     color: #fff;
     text-align: center;
     font-size: 1.2rem;
     padding: 1rem;
-}
-@media screen and (max-width: 768px) {
+  }
+  
+  @media screen and (max-width: 768px) {
     .contact-section-home {
-        background-attachment: scroll; /* Prevent fixed background issues on mobile */
+      background-attachment: scroll; /* Fixed backgrounds can cause issues on mobile */
     }
-
+  
     .contact-form {
-        padding: 2rem;
-        margin: 2em 1em;
+      padding: 2rem;
+      margin: 2em 1em;
     }
-
+  
     .btn-submit {
-        font-size: 16px;
+      font-size: 16px;
     }
-
+  
     .contactContent {
-        font-size: 1rem;
+      font-size: 1rem;
     }
-}
+  }

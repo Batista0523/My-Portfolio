@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const URL = import.meta.env.VITE_DEPLOYED || import.meta.env.VITE_BASE;
+const URL = import.meta.env.VITE_BASE;
 
 const handleResponse = (response) => {
   const data = response.data;
