@@ -1,13 +1,9 @@
-
 import "./About.css";
 import "animate.css";
 
 import { images } from "../../constants";
 
-
 function About() {
-
-
   return (
     <div className="about-body">
       <div className="about-container">
@@ -15,8 +11,8 @@ function About() {
         <section className="about-hero animate__animated animate__fadeIn">
           <h1 className="about-title">About Me</h1>
           <p className="about-description">
-            Hello, I'm Elisaul Batista—a dedicated Web Developer committed to
-            designing high-performance digital solutions. With a passion for
+            Hello, I&apos;m Elisaul Batista—a dedicated Web Developer committed
+            to designing high-performance digital solutions. With a passion for
             innovation and a deep understanding of modern technologies, I create
             scalable, user-centric applications that drive success and enhance
             digital experiences.
