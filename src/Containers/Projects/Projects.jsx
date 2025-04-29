@@ -3,7 +3,7 @@ import "./Projects.css";
 
 function Projects() {
   const [projects, setProjects] = useState([]);
-  const [searchTerm, setSearchTerm] = useState("");
+ 
   const url = import.meta.env.VITE_BASE;
 
   useEffect(() => {
@@ -23,25 +23,14 @@ function Projects() {
     fetchData();
   }, [url]);
 
-  // Filter projects based on the search term
-  const filteredProjects = projects.filter((project) =>
-    project.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+
 
   return (
     <div className="projects-body">
       <h1 className="projects-title">Projects</h1>
-      <div className="projects-search">
-        <input
-          type="text"
-          placeholder="Search projects..."
-          value={searchTerm}
-          onChange={(e) => setSearchTerm(e.target.value)}
-          className="search-input"
-        />
-      </div>
+    
       <div className="projects-container">
-        {filteredProjects.map((project, index) => (
+        {projects.map((project, index) => (
           <div className="project-card animate__animated animate__fadeInUp" key={index}>
             <h2 className="project-title">{project.title}</h2>
             <p className="project-description">{project.description}</p>
@@ -52,7 +41,16 @@ function Projects() {
                 rel="noopener noreferrer"
                 className="project-link"
               >
-                Demo
+                Live
+              </a>
+           
+              <a
+                href={project.github_repo_front}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                Frontend Repo
               </a>
               <a
                 href={project.github_repo_back}
@@ -60,15 +58,7 @@ function Projects() {
                 rel="noopener noreferrer"
                 className="project-link"
               >
-                Back end Repo
-              </a>
-              <a
-                href={project.github_repo_front}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="project-link"
-              >
-                Front end Repo
+                Backend Repo
               </a>
             </div>
           </div>
