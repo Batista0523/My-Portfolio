@@ -29,7 +29,8 @@ function Contact() {
     <div className="contact-container">
       <div className="contactContent">
         <div className="contact-form">
-        <h3 style={{color:'black'}}>Let's Connect</h3>
+        <h3 style={{ color: 'black' }}>Let&#39;s Connect</h3>
+
         <p style={{ color: 'black' }} >
   I&#39;m a passionate Full Stack Developer who turns ideas into clean, responsive, and impactful digital experiences.
   If you&#39;re looking for someone who blends strong technical skills with creativity and a collaborative spirit — let&#39;s talk.
