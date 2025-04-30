@@ -30,11 +30,12 @@ function Contact() {
       <div className="contactContent">
         <div className="contact-form">
         <h3 style={{color:'black'}}>Let's Connect</h3>
-        <p style={{color:'black'}} className="form-intro">
-          I'm a passionate Full Stack Developer who turns ideas into clean, responsive, and impactful digital experiences.
-          If you're looking for someone who blends strong technical skills with creativity and a collaborative spirit — let's talk.
-          I'm open to freelance, full-time, or apprenticeship opportunities. Let’s build something amazing together!
-        </p>
+        <p style={{ color: 'black' }} >
+  I&#39;m a passionate Full Stack Developer who turns ideas into clean, responsive, and impactful digital experiences.
+  If you&#39;re looking for someone who blends strong technical skills with creativity and a collaborative spirit — let&#39;s talk.
+  I&#39;m open to freelance, full-time, or apprenticeship opportunities. Let&#39;s build something amazing together!
+</p>
+
           <form onSubmit={handleSubmit}>
             <input
               className="input"
